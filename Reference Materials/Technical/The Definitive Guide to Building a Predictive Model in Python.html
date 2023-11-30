@@ -1,0 +1,1723 @@
+<!doctype html>
+<!--[if IE 9]>
+<html class="no-js ie9" lang="en"> <![endif]-->
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="msvalidate.01" content="B5163518CBE4A854B63801277FE5E35C" />
+  <meta name="google-site-verification" content="ucqagxjVuq0lJZeLKs0F5AppzK111lNt3IoxU6mzlJE" />
+  <meta name="facebook-domain-verification" content="hli4d7mfso56r97lmed0ee7v88bzw8" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+  <script>
+window.dataLayer = window.dataLayer || [];
+</script>
+<style>.async-hide { opacity: 0 !important }</style>
+<script>(function(a, s, y, n, c, h, i, d, e) { s.className += ' ' + y; h.start = 1 * new Date; h.end = i = function() { s.className = s.className.replace(RegExp(' ?' + y), '') }; (a[n] = a[n] || []).hide = h; setTimeout(function() { i(); h.end = null }, c); h.timeout = c; })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, { 'GTM-WK23PSS': true });</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WK23PSS');</script>
+  <!-- Start VWO Async SmartCode -->
+<script type='text/javascript' id='vwoCode'>
+window._vwo_code=window._vwo_code || (function() {
+var account_id=571133,
+version=1.3,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+is_spa=1,
+hide_element='body',
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery},library_tolerance:function(){return library_tolerance},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=d.createElement('script');t.fetchPriority='high';t.src=e;t.type='text/javascript';t.innerText;t.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(t)},init:function(){window.settings_timer=setTimeout(function(){_vwo_code.finish()},settings_tolerance);var e=d.createElement('style'),t=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',i=d.getElementsByTagName('head')[0];e.setAttribute('id','_vis_opt_path_hides');e.setAttribute('nonce',document.querySelector('#vwoCode').nonce);e.setAttribute('type','text/css');if(e.styleSheet)e.styleSheet.cssText=t;else e.appendChild(d.createTextNode(t));i.appendChild(e);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+ +is_spa+'&vn='+version);return settings_timer}};window._vwo_settings_timer = code.init();return code;}());
+</script>
+<!-- End VWO Async SmartCode -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=bOXynyJWa61">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=bOXynyJWa61">
+  <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png?v=bOXynyJWa61">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png?v=bOXynyJWa61">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=bOXynyJWa61">
+  <link rel="manifest" href="/site.webmanifest?v=bOXynyJWa61">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=bOXynyJWa6a" color="#018bff">
+  <link rel="shortcut icon" href="/favicon.ico?v=bOXynyJWa61">
+  <meta name="msapplication-TileColor" content="#018bff">
+  <meta name="theme-color" content="#0069c1">
+    <title>The Definitive Guide to Building a Predictive Model in Python</title>
+  
+  <!-- connect to domain of font files -->
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <!-- async CSS -->
+  <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');"
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap">
+  <!-- no-JS fallback -->
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap">
+  </noscript>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'; this.onload = null">
+
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v21.5 (Yoast SEO v21.5) - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Learn how to build a predictive model in Python, including the nuances of installing packages, reading data, and constructing the model step-by-step." />
+	<link rel="canonical" href="https://neo4j.com/blog/build-predictive-model-python/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="The Definitive Guide to Building a Predictive Model in Python - Graph Database &amp; Analytics" />
+	<meta property="og:description" content="Learn how to build a predictive model in Python, including the nuances of installing packages, reading data, and constructing the model step-by-step." />
+	<meta property="og:url" content="https://neo4j.com/blog/build-predictive-model-python/" />
+	<meta property="og:site_name" content="Graph Database &amp; Analytics" />
+	<meta property="article:publisher" content="https://www.facebook.com/neo4j.graph.database" />
+	<meta property="article:published_time" content="2023-06-16T16:00:51+00:00" />
+	<meta property="article:modified_time" content="2023-06-16T04:13:04+00:00" />
+	<meta property="og:image" content="https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python.png" />
+	<meta property="og:image:width" content="3334" />
+	<meta property="og:image:height" content="1742" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="author" content="Enzo" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@neo4j" />
+	<meta name="twitter:site" content="@neo4j" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://neo4j.com/blog/build-predictive-model-python/#article","isPartOf":{"@id":"https://neo4j.com/blog/build-predictive-model-python/"},"author":{"name":"Enzo","@id":"https://neo4j.com/#/schema/person/a5ea32c516768708b62734176ef5b099"},"headline":"The Definitive Guide to Building a Predictive Model in Python","datePublished":"2023-06-16T16:00:51+00:00","dateModified":"2023-06-16T04:13:04+00:00","mainEntityOfPage":{"@id":"https://neo4j.com/blog/build-predictive-model-python/"},"wordCount":2330,"publisher":{"@id":"https://neo4j.com/#organization"},"image":{"@id":"https://neo4j.com/blog/build-predictive-model-python/#primaryimage"},"thumbnailUrl":"https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python.png","keywords":["Graph Analytics","graph data science","guide","machine learning","ML","package","predictive model","python"],"articleSection":["AI / Machine Learning","Blog","graph database"],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://neo4j.com/blog/build-predictive-model-python/","url":"https://neo4j.com/blog/build-predictive-model-python/","name":"The Definitive Guide to Building a Predictive Model in Python","isPartOf":{"@id":"https://neo4j.com/#website"},"primaryImageOfPage":{"@id":"https://neo4j.com/blog/build-predictive-model-python/#primaryimage"},"image":{"@id":"https://neo4j.com/blog/build-predictive-model-python/#primaryimage"},"thumbnailUrl":"https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python.png","datePublished":"2023-06-16T16:00:51+00:00","dateModified":"2023-06-16T04:13:04+00:00","description":"Learn how to build a predictive model in Python, including the nuances of installing packages, reading data, and constructing the model step-by-step.","breadcrumb":{"@id":"https://neo4j.com/blog/build-predictive-model-python/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://neo4j.com/blog/build-predictive-model-python/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://neo4j.com/blog/build-predictive-model-python/#primaryimage","url":"https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python.png","contentUrl":"https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python.png","width":3334,"height":1742},{"@type":"BreadcrumbList","@id":"https://neo4j.com/blog/build-predictive-model-python/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"The Neo4j Blog","item":"https://neo4j.com/blog/"},{"@type":"ListItem","position":2,"name":"The Definitive Guide to Building a Predictive Model in Python"}]},{"@type":"WebSite","@id":"https://neo4j.com/#website","url":"https://neo4j.com/","name":"Graph Database &amp; Analytics","description":"The Leader in Graph Databases","publisher":{"@id":"https://neo4j.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://neo4j.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://neo4j.com/#organization","name":"Neo4j","url":"https://neo4j.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://neo4j.com/#/schema/logo/image/","url":"https://dist.neo4j.com/wp-content/uploads/20230926084108/Logo_FullColor_RGB_TransBG.svg","contentUrl":"https://dist.neo4j.com/wp-content/uploads/20230926084108/Logo_FullColor_RGB_TransBG.svg","width":677,"height":242,"caption":"Neo4j"},"image":{"@id":"https://neo4j.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/neo4j.graph.database","https://twitter.com/neo4j","https://instagram.com/neo4j","https://www.linkedin.com/company/neo4j","https://www.pinterest.com/neo4j/","https://www.youtube.com/neo4j"]},{"@type":"Person","@id":"https://neo4j.com/#/schema/person/a5ea32c516768708b62734176ef5b099","name":"Enzo","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://neo4j.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/ae1c245cbb882aea1fa84fa7f566a8db?s=96&r=g","contentUrl":"https://secure.gravatar.com/avatar/ae1c245cbb882aea1fa84fa7f566a8db?s=96&r=g","caption":"Enzo"}}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/neo4j.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel='stylesheet' id='show-login-css' href='https://neo4j.com/wp-content/plugins/miniorange-saml-20-single-sign-on/includes/css/show-login.css?version=4.1.3&#038;ver=6.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='hide-login-css' href='https://neo4j.com/wp-content/plugins/miniorange-saml-20-single-sign-on/includes/css/hide-login.css?version=4.1.3&#038;ver=6.4.1' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='mo_saml_admin_settings_style-css' href='https://neo4j.com/wp-content/plugins/miniorange-saml-20-single-sign-on/includes/css/jquery.ui.css?ver=6.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='foundation-css' href='https://neo4j.com/wp-content/themes/neo4jweb/assets/css/app.css?ver=1701197566' type='text/css' media='screen' />
+<link rel='stylesheet' id='/var/www/wp-content/themes/neo4jweb/assets/neo4j-react-modules-assets/search-preact/bundle.9cb85.css-css' href='https://neo4j.com/wp-content/themes/neo4jweb/assets/neo4j-react-modules-assets/search-preact/bundle.9cb85.css?ver=6.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='neo4j-block-styles-css' href='https://neo4j.com/wp-content/themes/neo4jweb/assets/css/blocks/block-styles.css?ver=1701197556' type='text/css' media='all' />
+<script type="text/javascript" src="https://neo4j.com/wp-content/themes/neo4jweb/assets/js/vendor/jquery-3.6.1.min.js?ver=3.6.1" id="jquery-js"></script>
+<script type="text/javascript" src="https://neo4j.com/wp-content/plugins/miniorange-saml-20-single-sign-on/includes/js/settings.js?ver=6.4.1" id="mo_saml_admin_settings_script_widget-js"></script>
+<script type="text/javascript" src="https://neo4j.com/wp-content/themes/neo4jweb/assets_v2/scripts/neo4j/dist/main_v1.min.js?ver=202308119-1455" id="neo4j-global-scripts-js"></script>
+<!-- Begin output from print_late_styles() -->
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary-70: #002b66;--wp--preset--color--primary-60: #0056b3;--wp--preset--color--primary-50: #0070d9;--wp--preset--color--primary: #018bff;--wp--preset--color--primary-30: #52bdff;--wp--preset--color--primary-20: #a3e2ff;--wp--preset--color--primary-10: #e6f8ff;--wp--preset--color--primary-button: #0A6190;--wp--preset--color--primary-button-hover: #014063;--wp--preset--color--secondary-70: #7a0031;--wp--preset--color--secondary-60: #a1003b;--wp--preset--color--secondary-50: #c70646;--wp--preset--color--secondary: #ed1252;--wp--preset--color--secondary-30: #ff668a;--wp--preset--color--secondary-20: #ffb8c4;--wp--preset--color--secondary-10: #fff4f6;--wp--preset--color--neutral-75: #151E29;--wp--preset--color--neutral-70: #212A34;--wp--preset--color--neutral-65: #2C3540;--wp--preset--color--neutral-60: #404752;--wp--preset--color--neutral-55: #535B66;--wp--preset--color--neutral-50: #717780;--wp--preset--color--neutral-45: #90979F;--wp--preset--color--neutral-40: #B2B7BD;--wp--preset--color--neutral-35: #C4C8CD;--wp--preset--color--neutral-30: #D5D9DE;--wp--preset--color--neutral-25: #E6E9EE;--wp--preset--color--neutral-20: #EEF1F6;--wp--preset--color--neutral-15: #F5F7FA;--wp--preset--color--neutral-10: #ffffff;--wp--preset--color--success-70: #00473b;--wp--preset--color--success-60: #006e58;--wp--preset--color--success-50: #009471;--wp--preset--color--success: #00ba88;--wp--preset--color--success-30: #44d4a4;--wp--preset--color--success-20: #98edcb;--wp--preset--color--success-10: #e1faef;--wp--preset--color--warning-70: #664b17;--wp--preset--color--warning-60: #8c6a22;--wp--preset--color--warning-50: #d9b54a;--wp--preset--color--warning: #ffde63;--wp--preset--color--warning-30: #ffea8c;--wp--preset--color--warning-20: #fff4b5;--wp--preset--color--warning-10: #fffbde;--wp--preset--color--blueberry-70: #091944;--wp--preset--color--blueberry: #0B297D;--wp--preset--color--blueberry-50: #2B50B6;--wp--preset--color--blueberry-40: #6184E7;--wp--preset--color--blueberry-30: #87A3F2;--wp--preset--color--blueberry-20: #B0C4FD;--wp--preset--color--blueberry-10: #D6E1FE;--wp--preset--color--mint-70: #116161;--wp--preset--color--mint-60: #2AADA5;--wp--preset--color--mint-50: #3DD4C5;--wp--preset--color--mint: #55F9E2;--wp--preset--color--mint-30: #A8FFEE;--wp--preset--color--mint-20: #D1FFF4;--wp--preset--color--mint-10: #F0FFFA;--wp--preset--color--transparent: transparent;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.721), 20px);--wp--preset--font-size--large: clamp(22.041px, 1.378rem + ((1vw - 3.2px) * 1.678), 36px);--wp--preset--font-size--x-large: clamp(25.014px, 1.563rem + ((1vw - 3.2px) * 2.042), 42px);--wp--preset--font-size--xs: 0.75rem;--wp--preset--font-size--sm: 0.875rem;--wp--preset--font-size--base: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.24), 1rem);--wp--preset--font-size--lg: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.481), 1.125rem);--wp--preset--font-size--xl: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.721), 1.25rem);--wp--preset--font-size--2-xl: clamp(0.984rem, 0.984rem + ((1vw - 0.2rem) * 0.992), 1.5rem);--wp--preset--font-size--3-xl: clamp(1.185rem, 1.185rem + ((1vw - 0.2rem) * 1.327), 1.875rem);--wp--preset--font-size--4-xl: clamp(1.378rem, 1.378rem + ((1vw - 0.2rem) * 1.677), 2.25rem);--wp--preset--font-size--5-xl: clamp(1.743rem, 1.743rem + ((1vw - 0.2rem) * 2.417), 3rem);--wp--preset--font-size--h-1: clamp(1.378rem, 1.378rem + ((1vw - 0.2rem) * 1.677), 2.25rem);--wp--preset--font-size--h-2: clamp(1.25rem, 1.25rem + ((1vw - 0.2rem) * 1.442), 2rem);--wp--preset--font-size--h-3: clamp(1.119rem, 1.119rem + ((1vw - 0.2rem) * 1.213), 1.75rem);--wp--preset--font-size--h-4: clamp(0.984rem, 0.984rem + ((1vw - 0.2rem) * 0.992), 1.5rem);--wp--preset--font-size--h-5: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.721), 1.25rem);--wp--preset--font-size--h-6: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.24), 1rem);--wp--preset--font-family--syne-neo: syne-neo, "Helvetica Neue", helvetica, roboto, arial, sans-serif;--wp--preset--font-family--public-sans: "Public Sans", "Helvetica Neue", helvetica, roboto, arial, sans-serif;--wp--preset--spacing--20: 0.5rem;--wp--preset--spacing--30: 0.75rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.25rem;--wp--preset--spacing--60: 1.5rem;--wp--preset--spacing--70: 1.75rem;--wp--preset--spacing--80: 2rem;--wp--preset--spacing--px: 1px;--wp--preset--spacing--10: 0.25rem;--wp--preset--spacing--90: clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 1.0417)), 2.25rem);--wp--preset--spacing--100: clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 2.0833)), 2.5rem);--wp--preset--spacing--120: clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 4.1667)), 3rem);--wp--preset--spacing--160: clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 8.3333)), 4rem);--wp--preset--spacing--200: clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 8.3333)), 5rem);--wp--preset--spacing--240: clamp(4rem, calc(4rem + ((1vw - 0.4rem) * 8.3333)), 6rem);--wp--preset--spacing--320: clamp(4rem, calc(4rem + ((1vw - 0.4rem) * 16.6667)), 8rem);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);--wp--preset--shadow--card: 0px 4px 4px 0px #00000026;--wp--custom--spacing--small: max(15px, 2vw);--wp--custom--spacing--medium: clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)));--wp--custom--spacing--large: clamp(4rem, 10vw, 8rem);--wp--custom--spacing--outer: var(--wp--custom--spacing--small, 1.25rem);--wp--custom--shadow--text: 1px 1px 16px rgba(0,0,0,1);}.wp-block-button .wp-block-button__link{--wp--preset--color--primary-button: #0A6190;--wp--preset--color--secondary: #ed1252;--wp--preset--color--white: #ffffff;}body { margin: 0;--wp--style--global--content-size: 752px;--wp--style--global--wide-size: 1152px; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding :where(.has-global-padding:not(.wp-block-block)) { padding-right: 0; padding-left: 0; }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(.has-global-padding:not(.wp-block-block)) > .alignfull { margin-right: 0; margin-left: 0; }.has-global-padding > .alignfull:where(:not(.has-global-padding):not(.is-layout-flex):not(.is-layout-grid)) > :where([class*="wp-block-"]:not(.alignfull):not([class*="__"]),p,h1,h2,h3,h4,h5,h6,ul,ol) { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding :where(.has-global-padding) > .alignfull:where(:not(.has-global-padding)) > :where([class*="wp-block-"]:not(.alignfull):not([class*="__"]),p,h1,h2,h3,h4,h5,h6,ul,ol) { padding-right: 0; padding-left: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.5rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child:first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child:last-child { margin-block-end: 0; }body { --wp--style--block-gap: 1.5rem; }:where(body .is-layout-flow)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-flow)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-flow)  > *{margin-block-start: 1.5rem;margin-block-end: 0;}:where(body .is-layout-constrained)  > :first-child:first-child{margin-block-start: 0;}:where(body .is-layout-constrained)  > :last-child:last-child{margin-block-end: 0;}:where(body .is-layout-constrained)  > *{margin-block-start: 1.5rem;margin-block-end: 0;}:where(body .is-layout-flex) {gap: 1.5rem;}:where(body .is-layout-grid) {gap: 1.5rem;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{color: var(--wp--preset--color--neutral-75);font-family: var(--wp--preset--font-family--public-sans);font-size: var(--wp--preset--font-size--base);line-height: 1.5;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--style--block-gap);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--style--block-gap);}a:where(:not(.wp-element-button)){text-decoration: none;}a:where(:not(.wp-element-button)):hover{text-decoration: underline;}h1, h2, h3, h4, h5, h6{font-family: var(--wp--preset--font-family--syne-neo);}h1{font-size: var(--wp--preset--font-size--5-xl);font-weight: 500;padding-right: 0;padding-bottom: 0;padding-left: 0;}h2{font-size: clamp(2rem, 4vw, 2.5rem);font-weight: 500;letter-spacing: 0;}h3{font-size: clamp(1.218rem, 1.218rem + ((1vw - 0.2rem) * 1.385), 1.938rem);font-weight: 500;letter-spacing: 0.25px;line-height: 1.3;}h4{font-weight: 500;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-70-color{color: var(--wp--preset--color--primary-70) !important;}.has-primary-60-color{color: var(--wp--preset--color--primary-60) !important;}.has-primary-50-color{color: var(--wp--preset--color--primary-50) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-primary-30-color{color: var(--wp--preset--color--primary-30) !important;}.has-primary-20-color{color: var(--wp--preset--color--primary-20) !important;}.has-primary-10-color{color: var(--wp--preset--color--primary-10) !important;}.has-primary-button-color{color: var(--wp--preset--color--primary-button) !important;}.has-primary-button-hover-color{color: var(--wp--preset--color--primary-button-hover) !important;}.has-secondary-70-color{color: var(--wp--preset--color--secondary-70) !important;}.has-secondary-60-color{color: var(--wp--preset--color--secondary-60) !important;}.has-secondary-50-color{color: var(--wp--preset--color--secondary-50) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-secondary-30-color{color: var(--wp--preset--color--secondary-30) !important;}.has-secondary-20-color{color: var(--wp--preset--color--secondary-20) !important;}.has-secondary-10-color{color: var(--wp--preset--color--secondary-10) !important;}.has-neutral-75-color{color: var(--wp--preset--color--neutral-75) !important;}.has-neutral-70-color{color: var(--wp--preset--color--neutral-70) !important;}.has-neutral-65-color{color: var(--wp--preset--color--neutral-65) !important;}.has-neutral-60-color{color: var(--wp--preset--color--neutral-60) !important;}.has-neutral-55-color{color: var(--wp--preset--color--neutral-55) !important;}.has-neutral-50-color{color: var(--wp--preset--color--neutral-50) !important;}.has-neutral-45-color{color: var(--wp--preset--color--neutral-45) !important;}.has-neutral-40-color{color: var(--wp--preset--color--neutral-40) !important;}.has-neutral-35-color{color: var(--wp--preset--color--neutral-35) !important;}.has-neutral-30-color{color: var(--wp--preset--color--neutral-30) !important;}.has-neutral-25-color{color: var(--wp--preset--color--neutral-25) !important;}.has-neutral-20-color{color: var(--wp--preset--color--neutral-20) !important;}.has-neutral-15-color{color: var(--wp--preset--color--neutral-15) !important;}.has-neutral-10-color{color: var(--wp--preset--color--neutral-10) !important;}.has-success-70-color{color: var(--wp--preset--color--success-70) !important;}.has-success-60-color{color: var(--wp--preset--color--success-60) !important;}.has-success-50-color{color: var(--wp--preset--color--success-50) !important;}.has-success-color{color: var(--wp--preset--color--success) !important;}.has-success-30-color{color: var(--wp--preset--color--success-30) !important;}.has-success-20-color{color: var(--wp--preset--color--success-20) !important;}.has-success-10-color{color: var(--wp--preset--color--success-10) !important;}.has-warning-70-color{color: var(--wp--preset--color--warning-70) !important;}.has-warning-60-color{color: var(--wp--preset--color--warning-60) !important;}.has-warning-50-color{color: var(--wp--preset--color--warning-50) !important;}.has-warning-color{color: var(--wp--preset--color--warning) !important;}.has-warning-30-color{color: var(--wp--preset--color--warning-30) !important;}.has-warning-20-color{color: var(--wp--preset--color--warning-20) !important;}.has-warning-10-color{color: var(--wp--preset--color--warning-10) !important;}.has-blueberry-70-color{color: var(--wp--preset--color--blueberry-70) !important;}.has-blueberry-color{color: var(--wp--preset--color--blueberry) !important;}.has-blueberry-50-color{color: var(--wp--preset--color--blueberry-50) !important;}.has-blueberry-40-color{color: var(--wp--preset--color--blueberry-40) !important;}.has-blueberry-30-color{color: var(--wp--preset--color--blueberry-30) !important;}.has-blueberry-20-color{color: var(--wp--preset--color--blueberry-20) !important;}.has-blueberry-10-color{color: var(--wp--preset--color--blueberry-10) !important;}.has-mint-70-color{color: var(--wp--preset--color--mint-70) !important;}.has-mint-60-color{color: var(--wp--preset--color--mint-60) !important;}.has-mint-50-color{color: var(--wp--preset--color--mint-50) !important;}.has-mint-color{color: var(--wp--preset--color--mint) !important;}.has-mint-30-color{color: var(--wp--preset--color--mint-30) !important;}.has-mint-20-color{color: var(--wp--preset--color--mint-20) !important;}.has-mint-10-color{color: var(--wp--preset--color--mint-10) !important;}.has-transparent-color{color: var(--wp--preset--color--transparent) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-70-background-color{background-color: var(--wp--preset--color--primary-70) !important;}.has-primary-60-background-color{background-color: var(--wp--preset--color--primary-60) !important;}.has-primary-50-background-color{background-color: var(--wp--preset--color--primary-50) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-primary-30-background-color{background-color: var(--wp--preset--color--primary-30) !important;}.has-primary-20-background-color{background-color: var(--wp--preset--color--primary-20) !important;}.has-primary-10-background-color{background-color: var(--wp--preset--color--primary-10) !important;}.has-primary-button-background-color{background-color: var(--wp--preset--color--primary-button) !important;}.has-primary-button-hover-background-color{background-color: var(--wp--preset--color--primary-button-hover) !important;}.has-secondary-70-background-color{background-color: var(--wp--preset--color--secondary-70) !important;}.has-secondary-60-background-color{background-color: var(--wp--preset--color--secondary-60) !important;}.has-secondary-50-background-color{background-color: var(--wp--preset--color--secondary-50) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-secondary-30-background-color{background-color: var(--wp--preset--color--secondary-30) !important;}.has-secondary-20-background-color{background-color: var(--wp--preset--color--secondary-20) !important;}.has-secondary-10-background-color{background-color: var(--wp--preset--color--secondary-10) !important;}.has-neutral-75-background-color{background-color: var(--wp--preset--color--neutral-75) !important;}.has-neutral-70-background-color{background-color: var(--wp--preset--color--neutral-70) !important;}.has-neutral-65-background-color{background-color: var(--wp--preset--color--neutral-65) !important;}.has-neutral-60-background-color{background-color: var(--wp--preset--color--neutral-60) !important;}.has-neutral-55-background-color{background-color: var(--wp--preset--color--neutral-55) !important;}.has-neutral-50-background-color{background-color: var(--wp--preset--color--neutral-50) !important;}.has-neutral-45-background-color{background-color: var(--wp--preset--color--neutral-45) !important;}.has-neutral-40-background-color{background-color: var(--wp--preset--color--neutral-40) !important;}.has-neutral-35-background-color{background-color: var(--wp--preset--color--neutral-35) !important;}.has-neutral-30-background-color{background-color: var(--wp--preset--color--neutral-30) !important;}.has-neutral-25-background-color{background-color: var(--wp--preset--color--neutral-25) !important;}.has-neutral-20-background-color{background-color: var(--wp--preset--color--neutral-20) !important;}.has-neutral-15-background-color{background-color: var(--wp--preset--color--neutral-15) !important;}.has-neutral-10-background-color{background-color: var(--wp--preset--color--neutral-10) !important;}.has-success-70-background-color{background-color: var(--wp--preset--color--success-70) !important;}.has-success-60-background-color{background-color: var(--wp--preset--color--success-60) !important;}.has-success-50-background-color{background-color: var(--wp--preset--color--success-50) !important;}.has-success-background-color{background-color: var(--wp--preset--color--success) !important;}.has-success-30-background-color{background-color: var(--wp--preset--color--success-30) !important;}.has-success-20-background-color{background-color: var(--wp--preset--color--success-20) !important;}.has-success-10-background-color{background-color: var(--wp--preset--color--success-10) !important;}.has-warning-70-background-color{background-color: var(--wp--preset--color--warning-70) !important;}.has-warning-60-background-color{background-color: var(--wp--preset--color--warning-60) !important;}.has-warning-50-background-color{background-color: var(--wp--preset--color--warning-50) !important;}.has-warning-background-color{background-color: var(--wp--preset--color--warning) !important;}.has-warning-30-background-color{background-color: var(--wp--preset--color--warning-30) !important;}.has-warning-20-background-color{background-color: var(--wp--preset--color--warning-20) !important;}.has-warning-10-background-color{background-color: var(--wp--preset--color--warning-10) !important;}.has-blueberry-70-background-color{background-color: var(--wp--preset--color--blueberry-70) !important;}.has-blueberry-background-color{background-color: var(--wp--preset--color--blueberry) !important;}.has-blueberry-50-background-color{background-color: var(--wp--preset--color--blueberry-50) !important;}.has-blueberry-40-background-color{background-color: var(--wp--preset--color--blueberry-40) !important;}.has-blueberry-30-background-color{background-color: var(--wp--preset--color--blueberry-30) !important;}.has-blueberry-20-background-color{background-color: var(--wp--preset--color--blueberry-20) !important;}.has-blueberry-10-background-color{background-color: var(--wp--preset--color--blueberry-10) !important;}.has-mint-70-background-color{background-color: var(--wp--preset--color--mint-70) !important;}.has-mint-60-background-color{background-color: var(--wp--preset--color--mint-60) !important;}.has-mint-50-background-color{background-color: var(--wp--preset--color--mint-50) !important;}.has-mint-background-color{background-color: var(--wp--preset--color--mint) !important;}.has-mint-30-background-color{background-color: var(--wp--preset--color--mint-30) !important;}.has-mint-20-background-color{background-color: var(--wp--preset--color--mint-20) !important;}.has-mint-10-background-color{background-color: var(--wp--preset--color--mint-10) !important;}.has-transparent-background-color{background-color: var(--wp--preset--color--transparent) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-70-border-color{border-color: var(--wp--preset--color--primary-70) !important;}.has-primary-60-border-color{border-color: var(--wp--preset--color--primary-60) !important;}.has-primary-50-border-color{border-color: var(--wp--preset--color--primary-50) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-primary-30-border-color{border-color: var(--wp--preset--color--primary-30) !important;}.has-primary-20-border-color{border-color: var(--wp--preset--color--primary-20) !important;}.has-primary-10-border-color{border-color: var(--wp--preset--color--primary-10) !important;}.has-primary-button-border-color{border-color: var(--wp--preset--color--primary-button) !important;}.has-primary-button-hover-border-color{border-color: var(--wp--preset--color--primary-button-hover) !important;}.has-secondary-70-border-color{border-color: var(--wp--preset--color--secondary-70) !important;}.has-secondary-60-border-color{border-color: var(--wp--preset--color--secondary-60) !important;}.has-secondary-50-border-color{border-color: var(--wp--preset--color--secondary-50) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-secondary-30-border-color{border-color: var(--wp--preset--color--secondary-30) !important;}.has-secondary-20-border-color{border-color: var(--wp--preset--color--secondary-20) !important;}.has-secondary-10-border-color{border-color: var(--wp--preset--color--secondary-10) !important;}.has-neutral-75-border-color{border-color: var(--wp--preset--color--neutral-75) !important;}.has-neutral-70-border-color{border-color: var(--wp--preset--color--neutral-70) !important;}.has-neutral-65-border-color{border-color: var(--wp--preset--color--neutral-65) !important;}.has-neutral-60-border-color{border-color: var(--wp--preset--color--neutral-60) !important;}.has-neutral-55-border-color{border-color: var(--wp--preset--color--neutral-55) !important;}.has-neutral-50-border-color{border-color: var(--wp--preset--color--neutral-50) !important;}.has-neutral-45-border-color{border-color: var(--wp--preset--color--neutral-45) !important;}.has-neutral-40-border-color{border-color: var(--wp--preset--color--neutral-40) !important;}.has-neutral-35-border-color{border-color: var(--wp--preset--color--neutral-35) !important;}.has-neutral-30-border-color{border-color: var(--wp--preset--color--neutral-30) !important;}.has-neutral-25-border-color{border-color: var(--wp--preset--color--neutral-25) !important;}.has-neutral-20-border-color{border-color: var(--wp--preset--color--neutral-20) !important;}.has-neutral-15-border-color{border-color: var(--wp--preset--color--neutral-15) !important;}.has-neutral-10-border-color{border-color: var(--wp--preset--color--neutral-10) !important;}.has-success-70-border-color{border-color: var(--wp--preset--color--success-70) !important;}.has-success-60-border-color{border-color: var(--wp--preset--color--success-60) !important;}.has-success-50-border-color{border-color: var(--wp--preset--color--success-50) !important;}.has-success-border-color{border-color: var(--wp--preset--color--success) !important;}.has-success-30-border-color{border-color: var(--wp--preset--color--success-30) !important;}.has-success-20-border-color{border-color: var(--wp--preset--color--success-20) !important;}.has-success-10-border-color{border-color: var(--wp--preset--color--success-10) !important;}.has-warning-70-border-color{border-color: var(--wp--preset--color--warning-70) !important;}.has-warning-60-border-color{border-color: var(--wp--preset--color--warning-60) !important;}.has-warning-50-border-color{border-color: var(--wp--preset--color--warning-50) !important;}.has-warning-border-color{border-color: var(--wp--preset--color--warning) !important;}.has-warning-30-border-color{border-color: var(--wp--preset--color--warning-30) !important;}.has-warning-20-border-color{border-color: var(--wp--preset--color--warning-20) !important;}.has-warning-10-border-color{border-color: var(--wp--preset--color--warning-10) !important;}.has-blueberry-70-border-color{border-color: var(--wp--preset--color--blueberry-70) !important;}.has-blueberry-border-color{border-color: var(--wp--preset--color--blueberry) !important;}.has-blueberry-50-border-color{border-color: var(--wp--preset--color--blueberry-50) !important;}.has-blueberry-40-border-color{border-color: var(--wp--preset--color--blueberry-40) !important;}.has-blueberry-30-border-color{border-color: var(--wp--preset--color--blueberry-30) !important;}.has-blueberry-20-border-color{border-color: var(--wp--preset--color--blueberry-20) !important;}.has-blueberry-10-border-color{border-color: var(--wp--preset--color--blueberry-10) !important;}.has-mint-70-border-color{border-color: var(--wp--preset--color--mint-70) !important;}.has-mint-60-border-color{border-color: var(--wp--preset--color--mint-60) !important;}.has-mint-50-border-color{border-color: var(--wp--preset--color--mint-50) !important;}.has-mint-border-color{border-color: var(--wp--preset--color--mint) !important;}.has-mint-30-border-color{border-color: var(--wp--preset--color--mint-30) !important;}.has-mint-20-border-color{border-color: var(--wp--preset--color--mint-20) !important;}.has-mint-10-border-color{border-color: var(--wp--preset--color--mint-10) !important;}.has-transparent-border-color{border-color: var(--wp--preset--color--transparent) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xs-font-size{font-size: var(--wp--preset--font-size--xs) !important;}.has-sm-font-size{font-size: var(--wp--preset--font-size--sm) !important;}.has-base-font-size{font-size: var(--wp--preset--font-size--base) !important;}.has-lg-font-size{font-size: var(--wp--preset--font-size--lg) !important;}.has-xl-font-size{font-size: var(--wp--preset--font-size--xl) !important;}.has-2-xl-font-size{font-size: var(--wp--preset--font-size--2-xl) !important;}.has-3-xl-font-size{font-size: var(--wp--preset--font-size--3-xl) !important;}.has-4-xl-font-size{font-size: var(--wp--preset--font-size--4-xl) !important;}.has-5-xl-font-size{font-size: var(--wp--preset--font-size--5-xl) !important;}.has-h-1-font-size{font-size: var(--wp--preset--font-size--h-1) !important;}.has-h-2-font-size{font-size: var(--wp--preset--font-size--h-2) !important;}.has-h-3-font-size{font-size: var(--wp--preset--font-size--h-3) !important;}.has-h-4-font-size{font-size: var(--wp--preset--font-size--h-4) !important;}.has-h-5-font-size{font-size: var(--wp--preset--font-size--h-5) !important;}.has-h-6-font-size{font-size: var(--wp--preset--font-size--h-6) !important;}.has-syne-neo-font-family{font-family: var(--wp--preset--font-family--syne-neo) !important;}.has-public-sans-font-family{font-family: var(--wp--preset--font-family--public-sans) !important;}.wp-block-button .wp-block-button__link.has-primary-button-color{color: var(--wp--preset--color--primary-button) !important;}.wp-block-button .wp-block-button__link.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.wp-block-button .wp-block-button__link.has-white-color{color: var(--wp--preset--color--white) !important;}.wp-block-button .wp-block-button__link.has-primary-button-background-color{background-color: var(--wp--preset--color--primary-button) !important;}.wp-block-button .wp-block-button__link.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.wp-block-button .wp-block-button__link.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.wp-block-button .wp-block-button__link.has-primary-button-border-color{border-color: var(--wp--preset--color--primary-button) !important;}.wp-block-button .wp-block-button__link.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.wp-block-button .wp-block-button__link.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}
+</style>
+<!-- End output from print_late_styles() -->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://neo4j.com/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://neo4j.com/?p=264026' />
+<link rel="alternate" type="application/json+oembed" href="https://neo4j.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fneo4j.com%2Fblog%2Fbuild-predictive-model-python%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://neo4j.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fneo4j.com%2Fblog%2Fbuild-predictive-model-python%2F&#038;format=xml" />
+<!-- Stream WordPress user activity plugin v3.10.0 -->
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://neo4j.com"><link rel="alternate" href="https://neo4j.com/wp-json/tribe/events/v1/" /><style id='wp-fonts-local' type='text/css'>
+@font-face{font-family:syne-neo;font-style:normal;font-weight:400;font-display:fallback;src:url('https://neo4j.com/wp-content/themes/neo4jweb/assets/fonts/syne-neo/SyneNeo-Medium.woff2') format('woff2'), url('https://neo4j.com/wp-content/themes/neo4jweb/assets/fonts/syne-neo/SyneNeo-Medium.woff') format('woff');font-stretch:normal;}
+</style>
+  
+</head>
+
+<body class="post-template-default single single-post postid-264026 single-format-standard wp-embed-responsive is_v1_build tribe-no-js">
+  <a class="show-on-focus skip-link" href="#skip-to-content" title="Skip to content">Skip to content</a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK23PSS" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  
+  <div data-c="header mini banner">
+    <div data-l="mini banner neo4j5" style="text-decoration: none;">
+      <div id="callout-banner" style="background: #181414; color: #fff; padding: .3em;">
+        <div class="row text-center">
+          <div class="columns">
+            <p style="font-size: 20px;margin-bottom:0;padding:0.5rem; color: #fff;"><b>Neo4j Connections: </b>Generative AI and Knowledge Graphs. <b>Register Today</b> <a style="color:#fff; text-decoration:underline"href="https://neo4j.com/connections/generative-ai-and-knowledge-graphs-unveiling-the-future-of-knowledge-retrieval/">North America & Europe</a> | <a style="color:#fff; text-decoration:underline"href="https://neo4j.com/connections/generative-ai-and-knowledge-graphs-unveiling-the-future-of-knowledge-retrieval-asia-pacific-asia-pacific/">Asia Pacific</a></p>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+  .n-contact-us-menu a {
+    font-weight: 700;
+    color: #0A6190;
+    line-height: 1;
+    padding: 0.85em 2em;
+  }
+
+  .n-contact-us-menu a:hover {
+    color: #014063; 
+  }
+
+</style>
+
+<div data-c="mobile main navigation" class="sticky hide-for-large z-40" style="height: 70px; top: 0">
+  <div class="title-bar justify-between px-4 py-2 hide-for-large sticky w-full top-0 z-10 shadow-sm"
+    style="height: 70px; top: 0">
+    <a href="/"><img height="34px" width="104px"
+      src="https://dist.neo4j.com/wp-content/uploads/20230926084108/Logo_FullColor_RGB_TransBG.svg" alt="The Neo4j Graph Platform – The #1 Platform for Connected Data" /></a>
+    <button type="button" aria-controls="toggle-neo4j-mobile-menu-container" aria-expanded="false" data-toggle="toggle-neo4j-mobile-menu-container"
+      class="m-0 mobile-menu-toggle-button inline-block">
+      <span class="sr-only">Menu</span>
+      <span class="n-icon n-icon-navigation-menu n-icon-lg"></span>
+    </button>
+  </div>
+</div>
+
+
+<!-- Height is set to 70px to work well with secondary menu that stay fixed after scroll on pages like /product -->
+
+
+<div class="off-canvas position-left" data-off-canvas id="toggle-neo4j-mobile-menu-container">
+  <div class="title-bar">
+    <img height="34px" width="104px"
+      src="https://dist.neo4j.com/wp-content/uploads/20210423072428/neo4j-logo-2020-1.svg" alt="Neo4j logo" />
+    <button type="button" class="m-0 mobile-menu-toggle-button inline-block"
+      data-toggle="toggle-neo4j-mobile-menu-container">
+      <span class="sr-only">Close Menu</span>
+      <span class="n-icon n-icon-close n-icon-size-lg"></span>
+    </button>
+  </div>
+  <div class="hide-for-large" id="mobile-menu">
+        <button class="search-button cursor-pointer hover:bg-neutral-20 p-4 w-full rounded-none flex items-center text-sm" style="line-height:0" aria-controls="neo4j-algolia-search-v2" aria-expanded="false">  
+      <span class="n-icon n-icon-search mr-2"></span>
+      Search
+    </button>
+    <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true">
+      <li><a href='#'>Products</a><ul class="menu vertical"><li><a href='#'>Graph Database</a><ul class="menu vertical"><li><a href='/product/neo4j-graph-database/'>Neo4j Graph Database</a></li><li><a href='/cloud/platform/aura-graph-database/'>Neo4j AuraDB</a></li></ul></li><li><a href='#'>Graph Data Science</a><ul class="menu vertical"><li><a href='/product/graph-data-science/'>Neo4j Graph Data Science</a></li></ul></li><li><a href='#'>Graph Tools</a><ul class="menu vertical"><li><a href='/product/developer-tools/'>Neo4j Developer Tools</a></li><li><a href='/workspace/'>Neo4j Workspace</a></li><li><a href='/product/bloom/'>Neo4j Bloom</a></li><li><a href='/product/graphql-library/'>Neo4j GraphQL Library</a></li><li><a href='/product/connectors/'>Neo4j Data Connectors</a></li><li><a href='/product/cypher-graph-query-language/'>Cypher Query Language</a></li></ul></li><li><a href='/deployment-center/'>Deployment Center</a></li><li><a href='/professional-services/'>Professional Services</a></li></ul></li><li><a href='#'>Use Cases</a><ul class="menu vertical"><li><a href='/generativeai/'>Generative AI</a></li><li><a href='/use-cases/'>Industries & Use Cases</a></li><li><a href='/case-studies/'>Case Studies</a></li><li><a href='/customers/'>Customers</a></li></ul></li><li><a href='#'>Developers & Data Scientists</a><ul class="menu vertical"><li><a href='#'>Developers</a><ul class="menu vertical"><li><a href='/developer/'>Developer Home</a></li><li><a href='/docs/'>Documentation</a></li><li><a href='/deployment-center/'>Deployment Center</a></li><li><a href='/developer-blog/'>Developer Blog</a></li><li><a href='https://community.neo4j.com/'>Community</a></li><li><a href='/developer/online-meetup/'>Virtual Events</a></li><li><a href='https://graphacademy.neo4j.com/'>GraphAcademy</a></li></ul></li><li><a href='#'>Data Scientists</a><ul class="menu vertical"><li><a href='/product/graph-data-science/'>Graph Data Science Home</a></li><li><a href='/docs/graph-data-science/current/'>Data Science Documentation</a></li><li><a href='/graph-data-science-software/'>Get Started with Graph Data Science</a></li><li><a href='https://community.neo4j.com/c/neo4j-graph-platform/graph-algorithms/73'>Data Science Community</a></li><li><a href='https://graphacademy.neo4j.com/categories/data-scientist/'>GraphAcademy for Data Science</a></li></ul></li></ul></li><li><a href='/pricing/'>Pricing</a></li><li><a href='#'>Learn</a><ul class="menu vertical"><li><a href='#'>Resources</a><ul class="menu vertical"><li><a href='/resources/'>Resource Library</a></li><li><a href='/blog/'>Neo4j Blog</a></li><li><a href='https://graphacademy.neo4j.com/'>GraphAcademy</a></li><li><a href='/case-studies/'>Case Studies</a></li><li><a href='/graph-database-executive-insights/'>Executive Insights</a></li></ul></li><li><a href='#'>Events</a><ul class="menu vertical"><li><a href='/events/'>Events Calendar</a></li><li><a href='/graphsummit/'>GraphSummit</a></li><li><a href='/connections/'>Connections</a></li><li><a href='/live-demos/'>Live Demos</a></li><li><a href='/webinars/'>Webinars</a></li></ul></li></ul></li>      <li><a href='/partners/'>Partners</a><ul class="menu vertical"><li><a href='/partners/directory/'>Find a Partner</a></li><li><a href='/partners/neo4j-partner-program/'>Become a Partner</a></li><li><a href='/partners/solution-partners/'>Solution Partners</a></li><li><a href='/partners/oem-partners/'>OEM Partners</a></li><li><a href='/partners/technology-partners/'>Technology Partners</a></li><li><a href='https://neo4j.my.site.com/Neo4jPartnerCommunity'>Partner Portal Login</a></li></ul></li><li><a href='#'>Company</a><ul class="menu vertical"><li><a href='/company/'>About Us</a></li><li><a href='/newsroom/'>Newsroom</a></li><li><a href='/awards/'>Awards and Honors</a></li><li><a href='/graphs4good/'>Graphs4Good</a></li><li><a href='/careers/'>Careers</a></li><li><a href='/culture/'>Culture</a></li><li><a href='/diversity-and-inclusion/'>Diversity</a></li><li><a href='/leadership/'>Leadership</a></li></ul></li>      <li><a href='https://console.neo4j.io/'>Aura Login</a></li>      <li><a href='https://support.neo4j.com/'>Support</a></li>      <li><a href='/contact-us/'>Contact Us</a></li><li><a href='/cloud/platform/aura-graph-database/?ref=nav-get-started-cta'>Get Started Free</a></li>    </ul>
+  </div>
+</div>
+
+<div id="menu-container-main" class="show-for-large bg-white shadow-sm sticky z-50" data-c="main navigation">
+  <div id="eyebrow-menu-container">
+    <div id="eyebrow-menu" class="grid-container vertical-flex justify-center">
+      <div class="top-bar desktop-top-menu">
+        <div class="top-bar-right">
+          <style>
+  #marketo-contact-us-modal {
+    width: 600px;
+    max-width: 75rem;
+    border: none;
+    border-style: none;
+    position: fixed;
+    margin: 0 auto;
+    top: 2rem !important;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    max-height: 55rem;
+  }
+
+  #marketo-contact-us-modal form {
+    font-family: "Public Sans","Helvetica Neue",helvetica,roboto,arial,sans-serif !important;
+  }
+  
+  #marketo-contact-us-modal .close-button {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: 0 0;
+    position: absolute;
+    z-index: 10;
+    color: #404752;
+    cursor: pointer;
+    right: 1rem;
+    top: 0.5rem;
+    font-size: 2em;
+    line-height: 1;
+    font-weight: 100;
+    padding: 0;
+  }
+
+  #marketo-contact-us-modal h4 {
+    line-height: 1.3;
+    letter-spacing: .25px;
+    font-family: Nudista;
+    padding-bottom: 0.5rem;
+    font-size: 1.5625rem;
+    margin-top: 0;
+  }
+
+  #marketo-contact-us-modal input {
+    height: 40px!important;
+    border-radius: 4px!important;
+    box-shadow: none!important;
+    width: 320px!important;
+    padding: 16px!important;
+    border: 1px solid #91a1ae!important;
+    font-size: 16px!important;
+    margin-bottom: 0!important;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 0 1rem;
+    background-color: #fff;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #151e29;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    appearance: none;
+  }
+
+  #marketo-contact-us-modal input::placeholder, #marketo-contact-us-modal select, #marketo-contact-us-modal textarea::placeholder {
+    color: rgb(117, 117, 117) !important;
+    font-weight: lighter !important;
+  }
+
+  #marketo-contact-us-modal .neo-marketo-form .mktoFormRow, #marketo-contact-us-modal .neo-marketo-form .mktoButtonRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #marketo-contact-us-modal .mktoForm .mktoButton {
+    width: 320px!important;
+    padding: 16px!important;
+    background: #0a6190!important;
+    border: none!important;
+    font-size: 16px!important;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #marketo-contact-us-modal .mktoForm .mktoAsterix{
+    display: none;
+  }
+
+  #marketo-contact-us-modal select {
+    height: 40px!important;
+    border-radius: 4px!important;
+    box-shadow: none!important;
+    width: 320px!important;
+    border: 1px solid #91a1ae!important;
+    font-size: 16px!important;
+    margin-bottom: 0!important;
+    padding: 0 32px 0 16px!important;
+    margin: 0 0 1rem;
+    appearance: none;
+    background-color: #fff;
+    font-family: inherit;
+    line-height: 1.5;
+    background-origin: content-box;
+    background-position: right -1rem center;
+    background-repeat: no-repeat;
+    background-size: 9px 6px;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+  }
+
+  #marketo-contact-us-modal .mktoErrorMsg {
+    text-align: left;
+    margin-top: 4px;
+    --tw-text-opacity: 1;
+    color: rgba(237,18,82,var(--tw-text-opacity));
+    font-size: .875rem;
+    line-height: 1.25rem;
+  }
+
+  #marketo-contact-us-modal textarea {
+    border-radius: 4px!important;
+    box-shadow: none!important;
+    width: 320px!important;
+    padding: 16px!important;
+    border: 1px solid #91a1ae!important;
+    font-size: 16px!important;
+    height: auto;
+    max-height: 5rem;
+  }
+
+  #marketo-contact-us-modal .mktoFormCol {
+    margin-bottom: 16px!important;
+  }
+
+  #marketo-contact-us-modal .privacy-policy {
+    width: 320px!important;
+    margin: auto!important;
+    margin-top: 24px!important;
+    font-size: 14px!important;
+  }
+
+  #marketo-contact-us-modal .privacy-policy .mktoHtmlText {
+    color: #151e29;
+    text-align: center;
+  }
+
+  #marketo-contact-us-modal a {
+    color: #0070d9;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  #marketo-contact-us-modal a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }  
+  
+  #marketo-contact-us-modal label {
+    display: block;
+    margin: 0;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #151e29;
+  }
+
+</style>
+
+
+<ul class="items-center z-20 flex m-0 mt-2" id="eyebrow-menu-items" role="menu">
+      <li id="AuraLogin" class="m-0 mr-6 group relative" role="menuitem">
+    <a href='https://console.neo4j.io/' class='text-xs font-normal text-neutral-60 hover:text-black p-0 cursor-pointer'>Aura Login</a>      </li>
+      <li id="Partners" class="m-0 mr-6 group relative" role="menuitem">
+    <a href='/partners/' class='text-xs font-normal text-neutral-60 hover:text-black p-0 cursor-pointer'>Partners</a><button class='dropdown-toggle' aria-expanded='false' type='button'><span class='show-for-sr'>Partners: submenu</span><i class='n-icon n-icon-chevron-down n-icon-sm ml-1' aria-hidden='true'></i></button>        <div class="dropdown absolute pt-2 z-50" style="left: -24px">
+      <ul class="py-2 border-none border-radius shadow-md dropdown-submenu rounded-md" role="menubar">
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/partners/directory/"
+            data-l="Find a Partner"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">Find a Partner</span>
+          </a>
+        </li>
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/partners/neo4j-partner-program/"
+            data-l="Become a Partner"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">Become a Partner</span>
+          </a>
+        </li>
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/partners/solution-partners/"
+            data-l="Solution Partners"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">Solution Partners</span>
+          </a>
+        </li>
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/partners/oem-partners/"
+            data-l="OEM Partners"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">OEM Partners</span>
+          </a>
+        </li>
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/partners/technology-partners/"
+            data-l="Technology Partners"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">Technology Partners</span>
+          </a>
+        </li>
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="https://neo4j.my.site.com/Neo4jPartnerCommunity"
+            data-l="Partner Portal Login" target="_blank"rel="noopener" class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">Partner Portal Login</span>
+          </a>
+        </li>
+              </ul>
+    </div>
+      </li>
+      <li id="Company" class="m-0 mr-6 group relative" role="menuitem">
+    <span class='text-xs font-normal text-neutral-60 hover:text-black p-0 cursor-default'>Company</span><button class='dropdown-toggle' aria-expanded='false' type='button'><span class='show-for-sr'>Company: submenu</span><i class='n-icon n-icon-chevron-down n-icon-sm ml-1' aria-hidden='true'></i></button>        <div class="dropdown absolute pt-2 z-50" style="left: -24px">
+      <ul class="py-2 border-none border-radius shadow-md dropdown-submenu rounded-md" role="menubar">
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/company/"
+            data-l="About Us"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">About Us</span>
+          </a>
+        </li>
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/newsroom/"
+            data-l="Newsroom"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">Newsroom</span>
+          </a>
+        </li>
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/awards/"
+            data-l="Awards and Honors"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">Awards and Honors</span>
+          </a>
+        </li>
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/graphs4good/"
+            data-l="Graphs4Good"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">Graphs4Good</span>
+          </a>
+        </li>
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/careers/"
+            data-l="Careers"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">Careers</span>
+          </a>
+        </li>
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/culture/"
+            data-l="Culture"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">Culture</span>
+          </a>
+        </li>
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/diversity-and-inclusion/"
+            data-l="Diversity"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">Diversity</span>
+          </a>
+        </li>
+                <li class="hover:bg-neutral-20 m-0 relative" role="menuitem">
+          <a href="/leadership/"
+            data-l="Leadership"  class="menu-dropdown-item  px-4 py-2 block">
+            <span class="block whitespace-nowrap text-neutral-60 text-xs">Leadership</span>
+          </a>
+        </li>
+              </ul>
+    </div>
+      </li>
+      <li id="Support" class="m-0 mr-6 group relative" role="menuitem">
+    <a href='https://support.neo4j.com/' class='text-xs font-normal text-neutral-60 hover:text-black p-0 cursor-pointer'>Support</a>      </li>
+  
+	
+  <li id="SearchButton" class="horizontal-flex text-neutral-60 search-button cursor-pointer hover:bg-neutral-20 rounded p-2 m-0" tabindex="0" role="menuitem" aria-expanded="false" type="button" style="line-height:0">
+    <span class='show-for-sr'>Search</span>
+    <span class="n-icon n-icon-search"></span>
+  </li>
+</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="neo4j-main-menu-container" class="bg-white z-10 w-full top-0">
+    <div id="neo4j-main-menu" class="grid-container vertical-flex justify-center py-3">
+      <div class=" desktop-menu flex items-center">
+        <div id="neo4j-main-menu-logo">
+          <a class="mr-8" href="/">
+            <img height="34px" width="104px"
+              src="https://dist.neo4j.com/wp-content/uploads/20230926084108/Logo_FullColor_RGB_TransBG.svg" alt="The Neo4j Graph Platform – The #1 Platform for Connected Data" />
+          </a>
+        </div>
+        <div class="flex items-center w-full ml-4">
+          <div class="w-full h-full">
+            
+<style>
+  .desktop-menu ul li.group:focus-visible {
+    outline-style: solid;
+    outline-width: 2px;
+    border-radius: .125rem;
+  }
+
+  a[data-l="Pricing"] {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  a[data-l="Pricing"]:focus, a[data-l="Pricing"]:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a[data-l="Contact Us"] {
+    padding: 0.5rem;
+    visibility: visible;
+  }
+
+  #n-contact-us-menu {
+    flex: 1;
+    justify-content: flex-end;
+  }
+</style>
+
+<ul id="neo4j-main-menu-items" class="items-center z-50 flex m-0 h-full" role="menu">
+  <li id='n-products-menu' class='group relative m-0 flex items-center self-stretch n-products-menu' role='menuitem'><span class='text-neutral-60 hover:text-black px-4 text-sm font-normal cursor-default'>Products</span><button class='dropdown-toggle -ml-4 mr-4' aria-expanded='false' type='button'><span class='show-for-sr'>Products: submenu</span><i class='n-icon n-icon-chevron-down n-icon-sm mx-1' aria-hidden='true'></i></button>
+<div class="dropdown absolute top-full" style="top: 100%">
+  <ul class="py-4 border-none border-radius menu-dropdown-shadow bg-white text-left m-0 dropdown-submenu rounded-md">
+    <div class="flex flex-row gap-x-4">
+      <div class="flex flex-col w-full">
+        <div class="flex-1">
+                    <div class="flex flex-row mt-2">
+            
+            
+            <div>
+              <!-- graph database -->
+              <span class="px-8 pt-4 pb-0 mb-0 text-overline text-sm text-primary block font-bold">Graph Database</span>
+              
+<li class="menu-item-wrapper ">
+  <a href="/product/neo4j-graph-database/"
+    data-l="Neo4j Graph Database"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Neo4j Graph Database    </span>
+    <span class="menu-item-description">Self-managed, deploy anywhere</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>
+                
+<li class="menu-item-wrapper ">
+  <a href="/cloud/platform/aura-graph-database/"
+    data-l="Neo4j AuraDB"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Neo4j AuraDB    </span>
+    <span class="menu-item-description">Fully managed graph database as a service</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>              
+              <!-- graph data science -->
+              <span class="px-8 pt-4 pb-0 mb-0 text-overline text-sm text-primary block font-bold">Graph Data Science</span>
+              
+<li class="menu-item-wrapper ">
+  <a href="/product/graph-data-science/"
+    data-l="Neo4j Graph Data Science"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Neo4j Graph Data Science    </span>
+    <span class="menu-item-description">Graph analytics and modeling platform</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>
+              <!-- deployment center -->
+              <span class="px-8 pt-4 pb-0 mb-0 text-overline text-sm text-primary block font-bold">Deploy</span>
+              <li class="menu-item-wrapper ">
+                <a href="/deployment-center/" class="menu-dropdown-item" data-l="product download-center db" aria-label="Download Graph Database">
+                  <span class="menu-item-title">Deployment Center</span>
+                  <span class="menu-item-description">Download Neo4j to get started</span>
+                </a>
+              </li>
+
+              <!-- professional services -->
+              <li class="menu-item-wrapper ">
+                <a href="/professional-services/" class="menu-dropdown-item" data-l="product professional-services db" aria-label="Professional Services">
+                  <span class="menu-item-title">Professional Services</span>
+                  <span class="menu-item-description">The world’s best graph database consultants</span>
+                </a>
+              </li>
+            </div>
+            
+            <!-- graph tools -->
+            <div>
+              <span class="px-8 pt-4 pb-0 mb-0 text-overline text-sm text-primary block font-bold">Graph Tools</span>
+
+              
+<li class="menu-item-wrapper ">
+  <a href="/product/developer-tools/"
+    data-l="Neo4j Developer Tools"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Neo4j Developer Tools    </span>
+    <span class="menu-item-description">Desktop, Browser, and Data Importer</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>
+              
+<li class="menu-item-wrapper ">
+  <a href="/workspace/"
+    data-l="Neo4j Workspace"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Neo4j Workspace    </span>
+    <span class="menu-item-description">Import, Explore, and Query Neo4j</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>
+              
+<li class="menu-item-wrapper ">
+  <a href="/product/bloom/"
+    data-l="Neo4j Bloom"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Neo4j Bloom    </span>
+    <span class="menu-item-description">Easy graph visualization and exploration</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>
+              
+<li class="menu-item-wrapper ">
+  <a href="/product/graphql-library/"
+    data-l="Neo4j GraphQL Library"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Neo4j GraphQL Library    </span>
+    <span class="menu-item-description">Low-code, open source API library</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>
+              
+<li class="menu-item-wrapper ">
+  <a href="/product/connectors/"
+    data-l="Neo4j Data Connectors"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Neo4j Data Connectors    </span>
+    <span class="menu-item-description">Apache Kafka, Apache Spark, and BI tools</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>
+              
+<li class="menu-item-wrapper ">
+  <a href="/product/cypher-graph-query-language/"
+    data-l="Cypher Query Language"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Cypher Query Language    </span>
+    <span class="menu-item-description">Powerful, intuitive, and graph-optimized</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>
+
+            </div>
+            
+          </div>
+        </div>
+        <!-- <div class="px-8">
+          <hr />
+          <div class="flex gap-x-8 with-underline-anchors py-2">
+            <div class="grow" style="flex-basis: 100%">
+              <li class="menu-item-wrapper text-sm">
+                <div class="font-bold">Deployment Center
+                </div>
+                <div class="font-normal menu-item-text-light">
+                  <a data-l="product download-center db" class="menu-dropdown-item-link menu-item-text-light" href="/deployment-center/" aria-label="Download Graph Database">Download Neo4j to get started</a>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </ul>
+</div>
+</li><li id='n-use-cases-menu' class='group relative m-0 flex items-center self-stretch n-use-cases-menu' role='menuitem'><span class='text-neutral-60 hover:text-black px-4 text-sm font-normal cursor-default'>Use Cases</span><button class='dropdown-toggle -ml-4 mr-4' aria-expanded='false' type='button'><span class='show-for-sr'>Use Cases: submenu</span><i class='n-icon n-icon-chevron-down n-icon-sm mx-1' aria-hidden='true'></i></button>
+<div class="dropdown get-started-button-dropdown absolute top-full" style="top: 100%">
+  <ul class="py-4 border-none border-radius menu-dropdown-shadow bg-white text-left m-0 dropdown-submenu rounded-md">
+        
+<li class="menu-item-wrapper ">
+  <a href="/generativeai/"
+    data-l="Generative AI"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Generative AI    </span>
+    <span class="menu-item-description">Back your LLMs with a knowledge graph for better business AI</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>        
+<li class="menu-item-wrapper ">
+  <a href="/use-cases/"
+    data-l="Industries & Use Cases"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Industries & Use Cases    </span>
+    <span class="menu-item-description">Fraud detection, knowledge graphs and more</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>        
+<li class="menu-item-wrapper ">
+  <a href="/case-studies/"
+    data-l="Case Studies"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Case Studies    </span>
+    <span class="menu-item-description">In-depth looks at customer success stories</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>        
+<li class="menu-item-wrapper ">
+  <a href="/customers/"
+    data-l="Customers"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Customers    </span>
+    <span class="menu-item-description">Companies, governments and NGOs using Neo4j</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>      </ul>
+</div></li><li id='n-developers-&-data-scientists-menu' class='group relative m-0 flex items-center self-stretch n-developers-&-data-scientists-menu' role='menuitem'><span class='text-neutral-60 hover:text-black px-4 text-sm font-normal cursor-default'>Developers & Data Scientists</span><button class='dropdown-toggle -ml-4 mr-4' aria-expanded='false' type='button'><span class='show-for-sr'>Developers & Data Scientists: submenu</span><i class='n-icon n-icon-chevron-down n-icon-sm mx-1' aria-hidden='true'></i></button>
+<div class="dropdown absolute z-50 top-full" style="top:100%">
+  <ul
+    class="py-4 border-none border-radius menu-dropdown-shadow bg-white text-left m-0 dropdown-submenu flex rounded-md">
+        <div>
+      <span
+        class="px-8 pt-4 pb-0 mb-0 text-overline text-sm text-primary block font-bold">Developers</span>
+            
+<li class="menu-item-wrapper ">
+  <a href="/developer/"
+    data-l="Developer Home"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Developer Home    </span>
+    <span class="menu-item-description">Best practices, how-to guides and tutorials</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/docs/"
+    data-l="Documentation"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Documentation    </span>
+    <span class="menu-item-description">Manuals for Neo4j products, Cypher and drivers</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/deployment-center/"
+    data-l="Deployment Center"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Deployment Center    </span>
+    <span class="menu-item-description">Get Neo4j products, tools and integrations</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/developer-blog/"
+    data-l="Developer Blog"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Developer Blog    </span>
+    <span class="menu-item-description">Deep dives into more technical Neo4j topics</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="https://community.neo4j.com/"
+    data-l="Community" target="_blank" rel="noopener"rel="noopener" class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Community    </span>
+    <span class="menu-item-description">A global forum for online discussion</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/developer/online-meetup/"
+    data-l="Virtual Events" target="_blank" rel="noopener"rel="noopener" class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Virtual Events    </span>
+    <span class="menu-item-description">Global developer conferences and workshops</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="https://graphacademy.neo4j.com/"
+    data-l="GraphAcademy"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      GraphAcademy    </span>
+    <span class="menu-item-description">Free online courses and certifications</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>          </div>
+
+        <div>
+      <span
+        class="px-8 pt-4 pb-0 mb-0 text-overline text-sm text-primary block font-bold">Data Scientists</span>
+            
+<li class="menu-item-wrapper ">
+  <a href="/product/graph-data-science/"
+    data-l="Graph Data Science Home"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Graph Data Science Home    </span>
+    <span class="menu-item-description">Learn what Neo4j offers for data science</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/docs/graph-data-science/current/"
+    data-l="Data Science Documentation"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Data Science Documentation    </span>
+    <span class="menu-item-description">Manual for the Graph Data Science library</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/graph-data-science-software/"
+    data-l="Get Started with Graph Data Science"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Get Started with Graph Data Science    </span>
+    <span class="menu-item-description">Download our software or get started in Sandbox today!</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="https://community.neo4j.com/c/neo4j-graph-platform/graph-algorithms/73"
+    data-l="Data Science Community"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Data Science Community    </span>
+    <span class="menu-item-description">A global forum for online discussion</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="https://graphacademy.neo4j.com/categories/data-scientist/"
+    data-l="GraphAcademy for Data Science"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      GraphAcademy for Data Science    </span>
+    <span class="menu-item-description">Free online courses and certifications for data scientists</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>          </div>
+
+      </ul>
+</div></li><li id='n-pricing-menu' class='group relative m-0 flex items-center self-stretch n-pricing-menu' role='menuitem'><a data-l='Pricing' href='/pricing/' class='text-neutral-60 hover:text-black p-4 text-sm font-normal cursor-pointer'>Pricing</a></li><li id='n-learn-menu' class='group relative m-0 flex items-center self-stretch n-learn-menu' role='menuitem'><span class='text-neutral-60 hover:text-black px-4 text-sm font-normal cursor-default'>Learn</span><button class='dropdown-toggle -ml-4 mr-4' aria-expanded='false' type='button'><span class='show-for-sr'>Learn: submenu</span><i class='n-icon n-icon-chevron-down n-icon-sm mx-1' aria-hidden='true'></i></button>
+<div class="dropdown absolute z-50 top-full" style="top:100%">
+  <ul
+    class="py-4 border-none border-radius menu-dropdown-shadow bg-white text-left m-0 dropdown-submenu flex rounded-md">
+        <div>
+      <span
+        class="px-8 pt-4 pb-0 mb-0 text-overline text-sm text-primary block font-bold">Resources</span>
+            
+<li class="menu-item-wrapper ">
+  <a href="/resources/"
+    data-l="Resource Library"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Resource Library    </span>
+    <span class="menu-item-description">White papers, data sheets and more</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/blog/"
+    data-l="Neo4j Blog"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Neo4j Blog    </span>
+    <span class="menu-item-description">Daily reads on general Neo4j topics</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="https://graphacademy.neo4j.com/"
+    data-l="GraphAcademy"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      GraphAcademy    </span>
+    <span class="menu-item-description">Free online courses and certifications</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/case-studies/"
+    data-l="Case Studies"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Case Studies    </span>
+    <span class="menu-item-description">In-depth looks at customer success stories</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/graph-database-executive-insights/"
+    data-l="Executive Insights"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Executive Insights    </span>
+    <span class="menu-item-description">Get to Know Graph Technology</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>          </div>
+
+        <div>
+      <span
+        class="px-8 pt-4 pb-0 mb-0 text-overline text-sm text-primary block font-bold">Events</span>
+            
+<li class="menu-item-wrapper ">
+  <a href="/events/"
+    data-l="Events Calendar"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Events Calendar    </span>
+    <span class="menu-item-description">Live online events, trainings and demos</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/graphsummit/"
+    data-l="GraphSummit"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      GraphSummit    </span>
+    <span class="menu-item-description">Live events around the world</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/connections/"
+    data-l="Connections"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Connections    </span>
+    <span class="menu-item-description">Our ongoing digital event series</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/live-demos/"
+    data-l="Live Demos"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Live Demos    </span>
+    <span class="menu-item-description">Weekly demos with Neo4j experts</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>            
+<li class="menu-item-wrapper ">
+  <a href="/webinars/"
+    data-l="Webinars"  class="menu-dropdown-item">
+    <span class="menu-item-title">
+      Webinars    </span>
+    <span class="menu-item-description">Upcoming live and on-demand webinars</span>
+  </a>
+  <!-- Maybe flyout submenu -->
+  
+</li>          </div>
+
+      </ul>
+</div></li><li id='n-contact-us-menu' class='group relative m-0 flex items-center self-stretch n-contact-us-menu' role='menuitem'><a data-l='Contact Us' href='/contact-us/' class='text-neutral-60 hover:text-black p-4 text-sm font-normal cursor-pointer'>Contact Us</a></li><li id='n-get-started-free-menu' class='group relative m-0 flex items-center self-stretch n-get-started-free-menu' role='menuitem'><a data-l='Get Started Free' href='/cloud/platform/aura-graph-database/?ref=nav-get-started-cta' class='text-neutral-60 hover:text-black p-4 text-sm font-normal cursor-pointer'>Get Started Free</a></li>
+</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+.js-warning {
+  background-color: red;
+  color: white !important;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid white;
+  font-size: 1.25rem;
+}
+</style>
+<noscript>
+  <h3 class="js-warning">Warning: JavaScript is disabled on your browser. Parts of Neo4j.com will not work properly.
+  </h3>
+</noscript>
+  <div id="skip-to-content"></div>
+
+
+<style>
+  .aura-promo {
+    width: 622px;
+		height: 72px;
+		margin: 0 auto;
+		margin-top: 20px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+  @media(max-width: 679px){
+    .aura-promo {
+      display: none;
+    }
+  }
+</style>
+
+<div class="blog-single">
+
+	<div class="aura-promo">
+		<a href="/cloud/platform/aura-graph-database/?ref=blogpromo">
+			<img class="aura-promo" src="https://dist.neo4j.com/wp-content/uploads/20220928141701/auradb-blog-promo2-1.svg" alt="AuraDB promotion">
+		</a>
+	</div>
+
+
+<section id="content" role="main">
+  <div class="row">
+    <div class="small-12 medium-10 large-8 medium-centered columns">
+      <p class="breadcrumb" style="font-weight: 200; font-size:75%;"><a href="/blog/">(Neo4j Blog)&#8592;[:BACK]</a>
+      </p>
+      <h1 class="entry-title blog-single-title">The Definitive Guide to Building a Predictive Model in Python</h1>
+      <div class="blog__author">
+        <h6 class="regular-byline">
+  <img width="150" height="150" src="https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-150x150.jpg" class="blog__author--img pull-left" alt="Zach Blumenfeld Picture" sizes="60px" decoding="async" srcset="https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-150x150.jpg 150w, https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-300x300.jpg 300w, https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-1024x1024.jpg 1024w, https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-768x768.jpg 768w, https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-1536x1536.jpg 1536w, https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-600x600.jpg 600w, https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379.jpg 1640w" />  <span><span class="byline-margin text-neutral-55 font-normal"><a href="https://neo4j.com/blog/contributor/zach-blumenfeld/" class="author-name text-neutral-55 link-secondary">Zach Blumenfeld</a><span>, Data Science Product Specialist, Neo4j</span></span></span>
+  <span class="block text-neutral-45">
+    <span> Jun 16</span>
+    <span class="middotDivider"></span>
+    <span>
+      <span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 12</span> <span class="rt-label rt-postfix">mins read</span></span>    </span>
+  </span>
+</h6>      </div>
+      <hr />
+    </div>
+  </div>
+  <div class="row">
+    <div class="columns small-12 medium-10 large-8 medium-offset-1 large-offset-2">
+      <div class="entry-content">
+                <div class="floating-share mr-1">
+          <div class="floating-social-cointainer opacity-0">
+            
+<!-- Share Buttons -->
+
+<ul class='social-icons-bar'>
+	<li id='twitter-icon' class='social-icon'>
+		<a href="https://twitter.com/intent/tweet?url=https://neo4j.com/blog/build-predictive-model-python&hashtags=graphdatabases" target="_blank" rel="noopener">
+			<i class='neo-icon twitter-24 light'></i>
+		</a>
+	</li>
+	<li id='facebook-icon' class='social-icon'>
+		<a href="https://www.facebook.com/sharer.php?u=https://neo4j.com/blog/build-predictive-model-python" target="_blank" rel="noopener">
+			<i class='neo-icon facebook-24 light'></i>
+		</a>
+	</li>
+	<li id='linkedin-icon' class='social-icon'>
+		<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://neo4j.com/blog/build-predictive-model-python" target="_blank" rel="noopener">
+			<i class='neo-icon linkedin-24 light'></i>
+		</a>
+	</li>
+</ul>
+
+          </div>
+        </div>
+                <img decoding="async" src="https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python.png" alt="" width="1000" class="aligncenter size-full wp-image-267092" srcset="https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python.png 3334w, https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python-300x157.png 300w, https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python-1024x535.png 1024w, https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python-150x78.png 150w, https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python-768x401.png 768w, https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python-1536x803.png 1536w, https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python-2048x1070.png 2048w, https://dist.neo4j.com/wp-content/uploads/20230615205602/The-Definitive-Guide-to-Building-a-Predictive-Model-in-Python-600x313.png 600w" sizes="(max-width: 3334px) 100vw, 3334px" /><br><br>
+
+<p>Predictive modeling is one of the most fundamental tasks of a data scientist, and you’ll encounter it in nearly every job and industry in the field. Keeping your knowledge and skills up-to-date is essential to driving efficiencies and revenue at your company.</p>
+
+<p>In this article, you&#8217;ll discover how to build a predictive model in Python, including the nuances of installing packages, reading data, and constructing the model step-by-step. </p>
+
+<h3>Predictive Modeling Fundamentals</h3><br>
+
+<p>Predictive modeling is the use of statistical models to make predictions about the future from past data. This practice can refer to both the development of models from mathematical principles and the application of those models to real-world data. Data scientists are generally only interested in doing the latter — using existing models to make predictions. </p>
+
+<p>Some everyday uses of predictive modeling in industry include:</p>
+
+<ul><ul><li>Identifying content-violating posts for a social media site</li>
+<li>Trying to predict the future value of a stock in finance</li>
+<li>Estimating the likelihood that a policy gets claimed in insurance</li>
+<li>Predicting the effectiveness of an advertising campaign</li></ul></ul>
+
+<p>Of course, these are just a few of the many ways you or your team may use predictive modeling to drive organizational efficiency. </p>
+
+<h3>Steps to Build a Predictive Model</h3><br>
+
+<p>Before diving into the specifics of building a predictive model in <a href="https://www.python.org/" target="_blank" rel="noopener">Python</a>, it&#8217;s critical to understand the primary steps for predictive modeling, regardless of what programming language you use. Here&#8217;s a look at these foundational actions.</p>
+
+<h4>1. Collect and Organize the Dataset</h4>
+
+<p>The first step to constructing a predictive model is to gather the data you want to build your model off of. Models need data so that they have a reference for how variables influence the outcome you&#8217;re trying to predict.</p>
+
+<p>On the job, your company will likely provide a database made in software like MySQL, MongoDB, or Neo4j to query your data. But on your own, you can get data by downloading it from a website or scraping it from the web.</p>
+
+<h4>2. Clean the Dataset</h4>
+
+<p>Often, a dataset won&#8217;t be “clean” when you first open it up. Some examples include:</p>
+
+<ul><ul><li>Different spellings for column values (i.e., having “Texas” and “TX” in a “state” column)</li>
+<li>Incorrect decimal points or units (i.e., price information in cents rather than dollars)</li>
+<li>Missing data (i.e. having values labeled as “NULL”, “NA”, or “NaN”)</li></ul></ul>
+
+<p>Since there are infinite ways that someone may wrongly display data, there&#8217;s no &#8220;one size fits all&#8221; approach to resolve these issues. The optimal strategy is to think critically about addressing each problem independently. Some best practices are:</p>
+
+<ul><ul><li>Never process “numerical” data that are descriptive (i.e. zip codes) as an actual number.</li>
+<li>It&#8217;s generally better to drop missing data rather than replace it with zero or the average.</li>
+<li>Ensure there&#8217;s exactly <strong>one</strong> way to label a category (so nothing like “small” and “Small” and “S”).</li></ul></ul>
+
+<h4>3. Choose a Methodology/Algorithm</h4>
+
+<p>The next step is to choose the model you want to use to generate your predictions. There are <em>hundreds </em>of models to choose from, and one way to narrow them down is to determine if a <strong>regression </strong>or <strong>classification </strong>model suits the situation<strong>.</strong></p>
+
+<p><strong>Regression</strong> models output a numerical estimation of the value of a specific variable, i.e. the price of a stock. <strong>Classification</strong> models output a statement of what “class” or “category” a data point belongs to, i.e. if someone defaults on a loan or not.</p>
+
+<p>To choose between using a regression or classification model, ask yourself <em>what you want the output to be</em>. If the output is a number, go with a regression model. If it’s a category, go with a classification model.</p>
+
+<p>As for what specific model to pick, feel free to review the <a href="https://scikit-learn.org/stable/user_guide.html" target="_blank" rel="noopener">sklearn user guide</a> for high-level overviews about different models. </p>
+
+<h4>4. Build the Model</h4>
+
+<p>The final step is to build and fine-tune the model. This step is the most straightforward because you can follow a standard format for training the model once the data is ready. It’s also easy to evaluate how well your model performs on the data you provide it.</p>
+
+<h3>Predictive Modeling in Python</h3><br>
+
+<p>No matter what programming language you use, there will be language-specific packages, functions, and syntax you’ll need to use. Python is no different.
+
+Data scientists can generally conduct predictive modeling in Python through the NumPy, pandas, and scikit-learn packages. Pandas and NumPy can help you load and manipulate data, while scikit-learn lets you build the predictive model. A more specialized model may use additional packages.</p>
+
+<h3>How to Build a Predictive Model in Python</h3><br>
+
+<p>To show you how to perform predictive analysis using Python, we&#8217;ll use the example of predicting which lenders will default on their loans. This process boils down to three steps:</p>
+
+<ol><ol><li>Install and Import Python Libraries</li>
+<li>Explore, Organize, and Clean the Data</li>
+<li>Built and Evaluate the Model</li></ol></ol>
+
+<p>Let&#8217;s get started.</p>
+
+<h4>1. Install and Import Python Packages</h4>
+
+<p>First, install the packages needed to load the data and create your model. Consider modeling in a <a href="https://jupyter.org/" target="_blank" rel="noopener">Jupyter Notebook</a> rather than a raw Python file so that you can easily see the output of your code. </p>
+
+<p>Assuming that you already have Python and Jupyter installed, open Powershell (if on Windows) or Terminal (if on Mac or Linux) and type the following command:</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>pip install matplotlib numpy pandas scikit-learn</pre><br>
+
+
+<p>Then start up Jupyter Notebook with the command:</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>jupyter notebook</pre><br>
+
+<p><div style="text-align: center;"><img fetchpriority="high" decoding="async" src="https://dist.neo4j.com/wp-content/uploads/20230615210240/jupyter-notebook.png" alt="" width="1170" height="132" class="aligncenter size-full wp-image-267094" srcset="https://dist.neo4j.com/wp-content/uploads/20230615210240/jupyter-notebook.png 1170w, https://dist.neo4j.com/wp-content/uploads/20230615210240/jupyter-notebook-300x34.png 300w, https://dist.neo4j.com/wp-content/uploads/20230615210240/jupyter-notebook-1024x116.png 1024w, https://dist.neo4j.com/wp-content/uploads/20230615210240/jupyter-notebook-150x17.png 150w, https://dist.neo4j.com/wp-content/uploads/20230615210240/jupyter-notebook-768x87.png 768w, https://dist.neo4j.com/wp-content/uploads/20230615210240/jupyter-notebook-600x68.png 600w" sizes="(max-width: 1170px) 100vw, 1170px" /></div></p>
+
+<p>Click the “new” drop-down menu and choose “python” to create a new notebook to work in.</p>
+
+<p>To import the packages, simply put these statements at the start of your notebook and run it.</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np</pre><br>
+
+<h4>2. Explore, Clean, and Organize the Data</h4>
+
+<p>With the Python packages ready to go, it&#8217;s time to download the data so you can prepare it for modeling. </p>
+
+<p>Download the dataset from <a href="https://www.kaggle.com/datasets/gauravduttakiit/loan-default-prediction?select=train_LZV4RXX.csv&#038;sort=votes" target="_blank" rel="noopener">Kaggle</a>, unzip the archive.zip file, and drag the train_LZV4RXX.csv file to the directory you’re working in.</p>
+
+<p>Now you’re ready to start exploring the data.</p>
+
+<h5>Read the Dataset</h5>
+
+<p>To read the dataset into the notebook, you can use pandas’ `read_csv` function. </p>
+
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>raw_data = pd.read_csv('train_LZV4RXX.csv',index_col='loan_id')</pre><br>
+
+
+<p>It&#8217;s good practice to store the unmodified data in a separate variable from the data you’ll be modifying, in case you make a mistake.</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>data = raw_data.copy(deep=True)</pre><br>
+
+
+<h5>Explore the Dataset</h5>
+
+<p>To display a DataFrame, you can append the variable name to the end of the cell and run the cell’s code.</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>data</pre><br>
+
+<p><div style="text-align: center;"><img decoding="async" src="https://dist.neo4j.com/wp-content/uploads/20230615210256/explore-dataset.png" alt="" width="1084" height="361" class="aligncenter size-full wp-image-267095" srcset="https://dist.neo4j.com/wp-content/uploads/20230615210256/explore-dataset.png 1084w, https://dist.neo4j.com/wp-content/uploads/20230615210256/explore-dataset-300x100.png 300w, https://dist.neo4j.com/wp-content/uploads/20230615210256/explore-dataset-1024x341.png 1024w, https://dist.neo4j.com/wp-content/uploads/20230615210256/explore-dataset-150x50.png 150w, https://dist.neo4j.com/wp-content/uploads/20230615210256/explore-dataset-768x256.png 768w, https://dist.neo4j.com/wp-content/uploads/20230615210256/explore-dataset-600x200.png 600w" sizes="(max-width: 1084px) 100vw, 1084px" /></div></p>
+
+<p>In this table, `loan_default` is the “target column”— the column you&#8217;re predicting using the other columns. `1` means that the borrower defaulted and `0` means that they paid back the loan in full.</p>
+
+<p>Here, there are two situations you can investigate:</p>
+
+<ol><ol><li>The `education` column only has `1` and `2` as values, indicating that it might be a mislabeled categorical column.</li>
+<li>`proof_submitted` is a categorical field, so you&#8217;ll want to check that there are no misspellings or duplicate categories.</li></ol></ol>
+
+<p>To get the values of only a specific column, you can index the data variable with the name of the column you want, like so:</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>data['proof_submitted']
+loan_id
+1    	Aadhar
+2    	Aadhar
+3   	VoterID
+4    	Aadhar
+5    	Aadhar
+     	...   
+6996 	Aadhar
+6997 	Aadhar
+6998 	Aadhar
+6999 	Aadhar
+7000 	Aadhar
+Name: proof_submitted, Length: 7000, dtype: object</pre><br>
+
+<p>Use the `unique` method to find unique values of a specific column.</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>data['proof_submitted'].unique()
+array(['Aadhar', 'VoterID', 'Driving', 'PAN', 'Passport'], dtype=object)
+data['education'].unique()
+array([ 1.,  2., nan])</pre><br>
+
+<p>It seems there are no duplicates in the `proof_submitted` columns, but the `education` column has at least some missing values (represented by `nan`). </p>
+
+<p>Normally, you might want to remove data points with missing values, but these instances demonstrate the need for careful consideration during exploratory data analysis. Since the only other values of `education` are `1` and `2`, you can assume that `nan` represents a “zero” class. So it would be something like `nan` is a high school dropout, `1` is a high school graduate, and `2` is a college graduate. Go ahead and modify this column to reflect these corrections before you feed the data into your model.</p>
+
+<p>Now that you&#8217;ve addressed the categorical columns, let’s move on to the numerical columns. The easiest way to get a glance at numerical data is to plot a histogram:</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>data.drop(['education','loan_default'],axis=1).plot(kind="density",subplots=True, sharex=False, figsize=(30,30),xlim=0)
+plt.show()</pre><br>
+
+
+<p>You can check the <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.plot.html" target="_blank" rel="noopener">pandas documentation</a> for what the arguments passed to `plot` do.</p>
+<p><div style="text-align: center;"><img decoding="async" src="https://dist.neo4j.com/wp-content/uploads/20230615210310/density-plots.png" alt="" width="500" class="aligncenter size-full wp-image-267096" srcset="https://dist.neo4j.com/wp-content/uploads/20230615210310/density-plots.png 2048w, https://dist.neo4j.com/wp-content/uploads/20230615210310/density-plots-300x292.png 300w, https://dist.neo4j.com/wp-content/uploads/20230615210310/density-plots-1024x998.png 1024w, https://dist.neo4j.com/wp-content/uploads/20230615210310/density-plots-150x146.png 150w, https://dist.neo4j.com/wp-content/uploads/20230615210310/density-plots-768x749.png 768w, https://dist.neo4j.com/wp-content/uploads/20230615210310/density-plots-1536x1497.png 1536w, https://dist.neo4j.com/wp-content/uploads/20230615210310/density-plots-600x585.png 600w" sizes="(max-width: 2048px) 100vw, 2048px" /></div></p>
+
+<p>The density plots show that the distribution of all the variables is reasonable, so there&#8217;s no need to correct the scale or remove outliers. Note that `last_deliqn_none` is centered around zero and one because it&#8217;s a boolean column.</p>
+
+<p>The final situation to check for is “class imbalance” which is when one class of the target column is overrepresented in the data. </p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>data.groupby("loan_default").count()/len(data)</pre><br>
+
+<p>In this code cell:</p>
+<ul><ul><li>`groupby` organizes the data by the `loan_default` column</li>
+<li>`count` aggregates data by the number of instances in each class</li>
+<li>Division by `len(data)` makes the values display as percentages rather than the raw count</li></ul></ul>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>loan_default
+False	0.6
+True 	0.4
+Name: age, dtype: float64</pre><br>
+
+<p>There are more people that haven&#8217;t defaulted than have in the dataset. This disproportion is problematic because models created using this data will <em>automatically </em>be more biased toward predicting people who won’t default.</p>
+
+<p>Luckily, it&#8217;s very easy to resolve this issue by specifying that the dataset is unbalanced when you go to create the model.</p>
+
+<h4>Clean the Dataset</h4>
+
+<p>Now that you’ve investigated the data a bit and noted what to change, it’s time to clean and modify the data so that you can feed it into a model.</p>
+
+<p>Start by fixing the `education` column. Create a function that assigns each of the values in the column (`1`,`2`, and `nan`) to a different category and apply it to the column, like so:</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>def get_education_category(education_value):
+   if education_value == 1:
+       return "Group_1"
+   elif education_value == 2:
+       return "Group_2"
+   elif np.isnan(education_value):
+       return "Group_3"
+
+
+data["education"] = data["education"].apply(get_education_category)</pre><br>
+
+<h5>Data Manipulation</h5>
+
+<p>With the data now cleaned, the last thing to do is to manipulate the data so you can pass it into a model. </p>
+
+<p>An important step in this phase is to make “dummy columns” for the two categorical columns — `education` and `proof_submitted` — since scikit-learn models can only read in numbers, not strings. The `get_dummies` function can quickly create the needed columns.</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>data = pd.get_dummies(data,columns=['education','proof_submitted'])</pre><br>
+
+<p><div style="text-align: center;"><img loading="lazy" decoding="async" src="https://dist.neo4j.com/wp-content/uploads/20230615210322/data-manipulation.png" alt="" width="2048" height="536" class="aligncenter size-full wp-image-267097" srcset="https://dist.neo4j.com/wp-content/uploads/20230615210322/data-manipulation.png 2048w, https://dist.neo4j.com/wp-content/uploads/20230615210322/data-manipulation-300x79.png 300w, https://dist.neo4j.com/wp-content/uploads/20230615210322/data-manipulation-1024x268.png 1024w, https://dist.neo4j.com/wp-content/uploads/20230615210322/data-manipulation-150x39.png 150w, https://dist.neo4j.com/wp-content/uploads/20230615210322/data-manipulation-768x201.png 768w, https://dist.neo4j.com/wp-content/uploads/20230615210322/data-manipulation-1536x402.png 1536w, https://dist.neo4j.com/wp-content/uploads/20230615210322/data-manipulation-600x157.png 600w" sizes="(max-width: 2048px) 100vw, 2048px" /></div></p>
+
+<h4>3. Data Modeling</h4>
+
+<p>Now it’s finally time to model the data. For that, you’ll want to choose two tools:</p>
+
+<ol><ol><li>A model/algorithms to use</li>
+<li>A <em>score function</em> to use</li></ol></ol>
+
+<p>Models are mathematical algorithms that essentially tell your computer how it should go about making predictions. A <em>score function</em> is a way of judging the performance of the model’s predictions.</p>
+
+<p>To know what model to select, please reference the <a href="https://scikit-learn.org/stable/user_guide.html" target="_blank" rel="noopener">sklearn user guide</a> for an overview of different models, as there are far too many to cover here. But, some points of comparison to consider when choosing a model include:</p>
+
+<ul><ul><li>Speed</li>
+<li>Explainability/Interpretability</li>
+<li>Tendency to overfit/underfit</li></ul></ul>
+
+<p>Score functions differ in their priorities. They can prioritize minimizing false negatives, false positives, or a mixture of both. Determine if false positives or false negatives are more damaging in your specific case. For example, in healthcare, false negatives in disease diagnosis can be fatal while a false positive typically isn&#8217;t life-threatening. If you want to look at the various score functions available, <a href="https://en.wikipedia.org/wiki/Confusion_matrix" target="_blank" rel="noopener">Wikipedia’s “Confusion Matrix” article</a> is a great resource.</p>
+
+<p>Since the model will be predicting a boolean value (whether or not the borrower defaults), you’ll want to use a classification model. We’ll be picking a Random Forest model since it&#8217;s fast and robust to both underfitting and overfitting. </p>
+
+<p>For the score function, assume the firm is risk-averse and wants to minimize false negatives (i.e., times when the model predicts a borrower won’t default and they do). The <em>recall</em> score function captures this goal; it&#8217;s defined as:</p>
+
+<p><div style="text-align: center;"><img loading="lazy" decoding="async" src="https://dist.neo4j.com/wp-content/uploads/20230615210346/recall-score-function-1024x83.png" alt="" width="640" height="52" class="aligncenter size-large wp-image-267098" srcset="https://dist.neo4j.com/wp-content/uploads/20230615210346/recall-score-function-1024x83.png 1024w, https://dist.neo4j.com/wp-content/uploads/20230615210346/recall-score-function-300x24.png 300w, https://dist.neo4j.com/wp-content/uploads/20230615210346/recall-score-function-150x12.png 150w, https://dist.neo4j.com/wp-content/uploads/20230615210346/recall-score-function-768x62.png 768w, https://dist.neo4j.com/wp-content/uploads/20230615210346/recall-score-function-600x49.png 600w, https://dist.neo4j.com/wp-content/uploads/20230615210346/recall-score-function.png 1057w" sizes="(max-width: 640px) 100vw, 640px" /></div></p>
+
+
+<p>With the model and score function chosen, you can now start actually coding the model. First, split the data into “training” and “test” data using scikit-learn’s `train_test_split` function. It’s essential to do this because if you provided the model <em>all</em> of the data, it would just repeat the data verbatim for its predictions.</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>from sklearn.model_selection import train_test_split
+
+
+X_train, X_test, y_train, y_test = train_test_split(
+   data.drop(["loan_default"], axis=1),
+   data["loan_default"],
+   test_size=0.4,
+)</pre><br>
+
+
+<p>The first argument provides the columns you&#8217;ll use as predictors (the “independent variables”). The second provides the target column. The `test_size` parameter determines how much of the data you&#8217;ll reserve for testing. Any value between `0.4` and `0.6` is considered good practice. </p>
+
+<p>Next, import the model and score function.</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import recall_score</pre><br>
+
+
+<p>Most models have “hyperparameters” you can adjust to make different variations of the model. The `GridSearchCV` class provides a way to test multiple sets of hyperparameters and pick the best ones.</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>from sklearn.model_selection import GridSearchCV
+
+
+clf = GridSearchCV(
+   RandomForestClassifier(),
+   {
+       "criterion": ["gini", "entropy"],
+       "max_depth": [50 + i * 10 for i in range(10)],
+       "oob_score": [True, False],
+       "max_features": ["sqrt", None, 6],
+       "min_impurity_decrease": [0.00, 0.001],
+       "class_weight": ["balanced"],
+   },
+   scoring="recall",
+   n_jobs=-1,
+   verbose=3,
+)</pre><br>
+
+
+<p>You can check <a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html" target="_blank" rel="noopener">scikit-learn documentation</a> for a description of what these hyperparameters do. Note that `class_weight` is set to only be `”balanced”` since the target value wasn’t evenly split between the people who did or didn&#8217;t default.</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>clf.fit(X_train, y_train)
+
+Fitting 5 folds for each of 240 candidates, totalling 1200 fits
+[CV 2/5] END class_weight=balanced, criterion=gini, max_depth=50, max_features=sqrt, min_impurity_decrease=0.0, oob_score=False;, score=0.297 total time=   0.7s
+[CV 3/5] END class_weight=balanced, criterion=gini, max_depth=50, max_features=sqrt, min_impurity_decrease=0.0, oob_score=False;, score=0.373 total time=   0.7s
+[CV 1/5] END class_weight=balanced, criterion=gini, max_depth=50, max_features=sqrt, min_impurity_decrease=0.0, oob_score=False;, score=0.376 total time=   0.7s
+[CV 5/5] END class_weight=balanced, criterion=gini, max_depth=50, max_features=sqrt, min_impurity_decrease=0.0, oob_score=True;, score=0.307 total time=   0.8s
+…</pre><br>
+
+<p>To print the score and parameters of the best model found during the search, use:</p>
+
+<pre data-lang="python" class=”code programlisting cm-s-neo”>print(
+   "Recall score of best model:",
+   round(recall_score(y_test, clf.predict(X_test)) * 100, 2),
+   "%",
+)
+print("Best model parameters:")
+clf.best_params_
+
+Recall score of best model: 56.72 %
+Best model parameters:
+{'class_weight': 'balanced',
+ 'criterion': 'gini',
+ 'max_depth': 70,
+ 'max_features': 6,
+ 'min_impurity_decrease': 0.001,
+ 'oob_score': True}</pre><br>
+
+
+
+<p>Our recall score says that, of borrowers that ended up defaulting, the model correctly identified 56% of them, which is pretty good!</p>
+
+<h3>Get Started With Predictive Modeling in Neo4j</h3><br>
+
+<p>In this article, you learned how to build a predictive model using a dataset from Kaggle. While this dataset was relatively clean from the start, in the real world, you’ll query data from a database, and even after you’ve done that, you&#8217;ll need to configure <a href="https://neo4j.com/docs/graph-data-science-client/current/" target="_blank" rel="noopener">connections to the database in Python</a>.</p>
+
+<p>An analytics and machine learning engine like Neo4j&#8217;s Graph Data Science can help you query and configure data easily using the relationships in your data to improve predictions. It plugs into enterprise data ecosystems directly, so you can get more data science projects into production quickly and efficiently. Check out this other <a href="https://neo4j.com/developer-blog/using-neo4j-graph-data-science-in-python-to-improve-machine-learning-models/" target="_blank" rel="noopener">blog post</a> to learn how to improve your machine learning model in Python using Neo4j Graph Data Science. </p>
+
+<p>With its native Python client and intuitive Graph Data Science API, there&#8217;s no need for a lengthy setup to begin creating predictive models. This, combined with access to pre-configured graph algorithms and automated procedures, means your organization can start turning your organization’s data into actionable insights from Day 1.</p>
+
+<p>Additionally, Neo4j Graph Data Science integrates directly with popular platforms like Apache Arrow, KNIME, and Dataiku, alongside providing automated MLOps services. It&#8217;s quick and easy way to reuse, share, and modify predictive models, so no matter your current tech stack, you can easily integrate Neo4j into your team’s workflow.</p>
+
+<br><div style="text-align: center;"><strong>Get started with <a href="https://neo4j.com/product/graph-data-science/" target="_blank" rel="noopener">Neo4j Graph Data Science</a> in Python today and improve your machine learning and predictive modeling capabilities. </strong></div>
+<br><div style="text-align: center;"><strong><a href="https://neo4j.com/product/graph-data-science/" class="medium button">Get Started With Graph Data Science</a></strong></div>      </div>
+    </div>
+    <div class="columns large-2 medium-1">
+            <div class="sidebar-blog sidebar opacity-0 floating">
+        
+<style>
+.mktoLogicalField.mktoCheckboxList.mktoHasWidth {
+    text-align: left;
+}
+
+.mktoForm input[name='Single_Opt_In__c'] {
+    display: inline;
+    position: relative;
+    top: 4px;
+}
+
+.sidebar .mktoCheckboxList>label {
+    display: inline;
+}
+
+.mktoAsterix {
+    display: none;
+}
+
+.sidebar .mktoForm input[type=email] {}
+</style>
+<div class="sidebar-item-container">
+    <h5 class="sidebar-item-title">Email me blog updates!</h5>
+    <div class="sidebar-item-content">
+        <div class="blog-form">
+            <script src="//app-ab10.marketo.com/js/forms2/js/forms2.min.js"></script>
+                        <form id="mktoForm_2218"></form>
+                        <script type="text/javascript">
+            MktoForms2.loadForm("//app-ab10.marketo.com", "710-RRC-335",
+                2218,
+                function(form) {
+                    // Add an onSuccess handler
+                    form.onSuccess(function(values, followUpUrl) {
+                        document.getElementById("pp-text").style.display = "none";
+                        document.getElementById("thks-subs").innerHTML =
+                            "<p class='byline'>Thank you! Email Node added.</p><p class='byline'>Receive more news and events: <a href='https://neo4j.com/manage-subscriptions/'>manage your subscriptions.<a/></p>";
+                        form.getFormElem().hide();
+                        return false;
+                    });
+                });
+            </script>
+            <div>
+                <p id="pp-text" class="byline">The information you provide will be used in accordance with the terms of
+                    our <a href="/privacy-policy/">privacy policy</a>.</p>
+                <div id="thks-subs"></div>
+            </div>
+        </div>
+    </div>
+</div>      </div>
+          </div>
+  </div>
+</section>
+
+<section>
+  <div class="row">
+    <div class="columns small-12 medium-10 large-8 medium-centered">
+      <div class="keyword">
+  <span class="blog-tag-item"><a href="https://neo4j.com/tag/graph-analytics/" rel="tag">Graph Analytics</a></span><span class="middotDivider"></span><span class="blog-tag-item"><a href="https://neo4j.com/tag/graph-data-science/" rel="tag">graph data science</a></span><span class="middotDivider"></span><span class="blog-tag-item"><a href="https://neo4j.com/tag/guide/" rel="tag">guide</a></span><span class="middotDivider"></span><span class="blog-tag-item"><a href="https://neo4j.com/tag/machine-learning/" rel="tag">machine learning</a></span><span class="middotDivider"></span><span class="blog-tag-item"><a href="https://neo4j.com/tag/ml/" rel="tag">ML</a></span><span class="middotDivider"></span><span class="blog-tag-item"><a href="https://neo4j.com/tag/package/" rel="tag">package</a></span><span class="middotDivider"></span><span class="blog-tag-item"><a href="https://neo4j.com/tag/predictive-model/" rel="tag">predictive model</a></span><span class="middotDivider"></span><span class="blog-tag-item"><a href="https://neo4j.com/tag/python/" rel="tag">python</a></span></div>      <div class="share-container mb-2">
+        
+<!-- Share Buttons -->
+
+<ul class='social-icons-bar'>
+	<li id='twitter-icon' class='social-icon'>
+		<a href="https://twitter.com/intent/tweet?url=https://neo4j.com/blog/build-predictive-model-python&hashtags=graphdatabases" target="_blank" rel="noopener">
+			<i class='neo-icon twitter-24 light'></i>
+		</a>
+	</li>
+	<li id='facebook-icon' class='social-icon'>
+		<a href="https://www.facebook.com/sharer.php?u=https://neo4j.com/blog/build-predictive-model-python" target="_blank" rel="noopener">
+			<i class='neo-icon facebook-24 light'></i>
+		</a>
+	</li>
+	<li id='linkedin-icon' class='social-icon'>
+		<a href="https://www.linkedin.com/shareArticle?mini=true&url=https://neo4j.com/blog/build-predictive-model-python" target="_blank" rel="noopener">
+			<i class='neo-icon linkedin-24 light'></i>
+		</a>
+	</li>
+</ul>
+
+        <span class="byline pull-right com-disclaimer"><a href="/terms/community-disclaimer/">Neo4j Community
+            Disclaimer</a></span>
+      </div>
+      <div class="card card-padding">
+  </h5>
+  <div class="row">
+    <div class="medium-2 small-12 columns">
+      <img width="150" height="150" src="https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-150x150.jpg" class="blog-single-author-img" alt="Zach Blumenfeld Image" sizes="75px" decoding="async" loading="lazy" srcset="https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-150x150.jpg 150w, https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-300x300.jpg 300w, https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-1024x1024.jpg 1024w, https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-768x768.jpg 768w, https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-1536x1536.jpg 1536w, https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379-600x600.jpg 600w, https://dist.neo4j.com/wp-content/uploads/20211108121419/Blumenfeld-e1657644466379.jpg 1640w" />    </div>
+    <div class="medium-10 small-12 columns author-bio">
+      <h6 class="text-neutral-45 text-sm font-normal no-margin">Author</h6>
+      <h5 class="font-bold">
+        Zach Blumenfeld, Data Science Product Specialist, Neo4j      </h5>
+      <div>
+        Zach Blumenfeld is a graph enthusiast who helps data scientists, engineers, and business leaders understand and implement Graph Analytics to solve challenging business problems. He has firsthand experience with a wide range of modern day analytical challenges, including criminal fraud detection, identity resolution, and recommendation systems. Serving in both data <a href="https://neo4j.com/blog/contributor/zach-blumenfeld/">... know more</a>        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+  </div>
+</section>
+
+<section class="bg-neutral-20"><div class="row"><div class="small-12 columns large-centered"><p class="font-normal">Related Articles</p><div class="row related-posts"><div class="columns large-4 small-12"><div class="card"><span class="thumb"><a href="https://neo4j.com/blog/this-week-in-neo4j-vector-java-hashgnn-confluent-sandbx-and-more/" title="This Week in Neo4j: Vector Search, Java, HashGNN, Confluent, Sandbox and more"><img width="800" height="400" src="https://dist.neo4j.com/wp-content/uploads/20230822080436/Twin4j-Schibberges.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://dist.neo4j.com/wp-content/uploads/20230822080436/Twin4j-Schibberges.png 800w, https://dist.neo4j.com/wp-content/uploads/20230822080436/Twin4j-Schibberges-300x150.png 300w, https://dist.neo4j.com/wp-content/uploads/20230822080436/Twin4j-Schibberges-150x75.png 150w, https://dist.neo4j.com/wp-content/uploads/20230822080436/Twin4j-Schibberges-768x384.png 768w, https://dist.neo4j.com/wp-content/uploads/20230822080436/Twin4j-Schibberges-600x300.png 600w" sizes="(max-width: 800px) 100vw, 800px" /></a></span><div class="title"><span><a class="link-secondary line-clamp two text-sm mb-2" href="https://neo4j.com/blog/this-week-in-neo4j-vector-java-hashgnn-confluent-sandbx-and-more/"
+                  title="This Week in Neo4j: Vector Search, Java, HashGNN, Confluent, Sandbox and more">This Week in Neo4j: Vector Search, Java, HashGNN, Confluent, Sandbox and more</a></span><span class="text-xs text-neutral-55"><span class="byline">Aug 26</span><span class="middotDivider"></span><span class="byline"><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 3</span> <span class="rt-label rt-postfix">mins read</span></span></span></span></div></div></div><div class="columns large-4 small-12"><div class="card"><span class="thumb"><a href="https://neo4j.com/blog/vector-search-deeper-insights/" title="​​Neo4j’s Vector Search: Unlocking Deeper Insights for AI-Powered Applications"><img width="3334" height="1742" src="https://dist.neo4j.com/wp-content/uploads/20230821062610/blog_Neo4js-Vector-Indexing.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://dist.neo4j.com/wp-content/uploads/20230821062610/blog_Neo4js-Vector-Indexing.png 3334w, https://dist.neo4j.com/wp-content/uploads/20230821062610/blog_Neo4js-Vector-Indexing-300x157.png 300w, https://dist.neo4j.com/wp-content/uploads/20230821062610/blog_Neo4js-Vector-Indexing-1024x535.png 1024w, https://dist.neo4j.com/wp-content/uploads/20230821062610/blog_Neo4js-Vector-Indexing-150x78.png 150w, https://dist.neo4j.com/wp-content/uploads/20230821062610/blog_Neo4js-Vector-Indexing-768x401.png 768w, https://dist.neo4j.com/wp-content/uploads/20230821062610/blog_Neo4js-Vector-Indexing-1536x803.png 1536w, https://dist.neo4j.com/wp-content/uploads/20230821062610/blog_Neo4js-Vector-Indexing-2048x1070.png 2048w, https://dist.neo4j.com/wp-content/uploads/20230821062610/blog_Neo4js-Vector-Indexing-600x313.png 600w" sizes="(max-width: 3334px) 100vw, 3334px" /></a></span><div class="title"><span><a class="link-secondary line-clamp two text-sm mb-2" href="https://neo4j.com/blog/vector-search-deeper-insights/"
+                  title="​​Neo4j’s Vector Search: Unlocking Deeper Insights for AI-Powered Applications">​​Neo4j’s Vector Search: Unlocking Deeper Insights for AI-Powered Applications</a></span><span class="text-xs text-neutral-55"><span class="byline">Aug 22</span><span class="middotDivider"></span><span class="byline"><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 4</span> <span class="rt-label rt-postfix">mins read</span></span></span></span></div></div></div><div class="columns large-4 small-12"><div class="card"><span class="thumb"><a href="https://neo4j.com/blog/this-week-in-neo4j-graphql-course-chatbot-app-development-php-bloom-features-embeddings-and-more/" title="This Week in Neo4j: GraphQL Course, Chatbot, App Development, PHP, Bloom Features, Embeddings, and More"><img width="800" height="400" src="https://dist.neo4j.com/wp-content/uploads/20230807180629/Twin4j-Blue-13.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://dist.neo4j.com/wp-content/uploads/20230807180629/Twin4j-Blue-13.png 800w, https://dist.neo4j.com/wp-content/uploads/20230807180629/Twin4j-Blue-13-300x150.png 300w, https://dist.neo4j.com/wp-content/uploads/20230807180629/Twin4j-Blue-13-150x75.png 150w, https://dist.neo4j.com/wp-content/uploads/20230807180629/Twin4j-Blue-13-768x384.png 768w, https://dist.neo4j.com/wp-content/uploads/20230807180629/Twin4j-Blue-13-600x300.png 600w" sizes="(max-width: 800px) 100vw, 800px" /></a></span><div class="title"><span><a class="link-secondary line-clamp two text-sm mb-2" href="https://neo4j.com/blog/this-week-in-neo4j-graphql-course-chatbot-app-development-php-bloom-features-embeddings-and-more/"
+                  title="This Week in Neo4j: GraphQL Course, Chatbot, App Development, PHP, Bloom Features, Embeddings, and More">This Week in Neo4j: GraphQL Course, Chatbot, App Development, PHP, Bloom Features, Embeddings, and More</a></span><span class="text-xs text-neutral-55"><span class="byline">Aug 12</span><span class="middotDivider"></span><span class="byline"><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix"></span> <span class="rt-time"> 3</span> <span class="rt-label rt-postfix">mins read</span></span></span></span></div></div></div></div></div></div></section>
+</div>
+
+
+<footer data-c="footer navigation">
+  
+<div id="footer-v2" class="bg-baltic-80 text-white py-16 text-sm">
+  <div class="grid-container flex flex-col gap-y-8">
+    <div class="grid-x grid-padding-y grid-margin-y">
+      <!-- Products column -->
+      <div class="cell small-12 medium-3 flex flex-col gap-y-3">
+        <div class="uppercase font-bold">Products</div>
+        <ul class="list-none m-0 mb-4">
+          <li class="mb-2"><a data-l="Neo4j Graph Database" class="leading-6" href="/product/neo4j-graph-database/">Neo4j Graph Database</a></li>
+          <li class="mb-2"><a data-l="Neo4j AuraDB" class="leading-6" href="/cloud/platform/aura-graph-database/">Neo4j AuraDB</a></li>
+          <li class="mb-2"><a data-l="Neo4j Graph Data Science" class="leading-6" href="/product/graph-data-science/">Neo4j Graph Data Science</a></li>
+          <li class="mb-2"><a data-l="Download Center" class="leading-6" href="/deployment-center/">Deployment Center</a></li>
+          <li class="mb-2"><a data-l="professional-services" class="leading-6" href="/professional-services/">Professional Services</a></li>
+          <li class="mb-2"><a data-l="Pricing" class="leading-6" href="/pricing/">Pricing</a></li>
+        </ul>
+        <!-- Graph Tools column -->
+        <div class="uppercase font-bold">Graph Tools</div>
+        <ul class="list-none m-0 mb-4">
+          <li class="mb-2"><a data-l="Neo4j Developer Tools" class="leading-6" href="/product/developer-tools/">Neo4j Developer Tools</a></li>
+          <li class="mb-2"><a data-l="Neo4j Workspace" class="leading-6" href="/workspace/">Neo4j Workspace</a></li>
+          <li class="mb-2"><a data-l="Neo4j Bloom" class="leading-6" href="/product/bloom/">Neo4j Bloom</a></li>
+          <li class="mb-2"><a data-l="Neo4j GraphQL Library" class="leading-6" href="/product/graphql-library/">Neo4j GraphQL Library</a></li>
+          <li class="mb-2"><a data-l="Neo4j Data Connectors" class="leading-6" href="/product/connectors/">Neo4j Data Connectors</a></li>
+          <li class="mb-2"><a data-l="Cypher Query Language" class="leading-6" href="/product/cypher-graph-query-language/">Cypher Query Language</a></li>
+        </ul>
+        <!-- Use Cases column -->
+        <div class="uppercase font-bold">Use Cases</div>
+        <ul class="list-none m-0 mb-4">
+          <li class="mb-2"><a data-l="Generative AI" class="leading-6" href="/generativeai/">Generative AI</a></li>
+          <li class="mb-2"><a data-l="Industries & Use Cases" class="leading-6" href="/use-cases/">Industries & Use Cases</a></li>
+          <li class="mb-2"><a data-l="Case Studies" class="leading-6" href="/case-studies/">Case Studies</a></li>
+          <li class="mb-2"><a data-l="Customers" class="leading-6" href="/customers/">Customers</a></li>
+        </ul>
+      </div>
+      <div class="cell small-12 medium-3 flex flex-col gap-y-3">
+        
+        <!-- Developers -->
+        <div class="uppercase font-bold">Developers</div>
+        <ul class="list-none m-0 mb-4">
+          <li class="mb-2"><a data-l="Developer Home" class="leading-6" href="/developer/">Developer Home</a></li>
+          <li class="mb-2"><a data-l="Documentation" class="leading-6" href="/docs/">Documentation</a></li>
+          <li class="mb-2"><a data-l="Deployment Center" class="leading-6" href="/deployment-center/">Deployment Center</a></li>
+          <li class="mb-2"><a data-l="Developer Blog" class="leading-6" href="/developer-blog/">Developer Blog</a></li>
+          <li class="mb-2"><a data-l="Community" class="leading-6" href="https://community.neo4j.com/" aria-label="Community (opens in new tab)" target="_blank">Community</a></li>
+          <li class="mb-2"><a data-l="Virtual Events" class="leading-6" href="/developer/online-meetup/">Virtual Events</a></li>
+          <li class="mb-2"><a data-l="GraphAcademy" class="leading-6" href="https://graphacademy.neo4j.com/" aria-label="Graph Academy (opens in new tab)" target="_blank">GraphAcademy</a></li>
+        </ul>
+        <!-- Data Scientists -->
+        <div class="uppercase font-bold">Data Scientists</div>
+        <ul class="list-none m-0 mb-4">
+          <li class="mb-2"><a data-l="Graph Data Science Home" class="leading-6" href="/product/graph-data-science/">Graph Data Science Home</a></li>
+          <li class="mb-2"><a data-l="Data Science Documentation" class="leading-6" href="/docs/graph-data-science/current/">Data Science Documentation</a></li>
+          <li class="mb-2"><a data-l="Get Started with Graph Data Science" class="leading-6" href="/graph-data-science-software/">Get Started with Graph Data Science</a></li>
+          <li class="mb-2"><a data-l="Data Science Community" class="leading-6" href="https://community.neo4j.com/c/neo4j-graph-platform/graph-algorithms/73" aria-label="Data Science Community (opens in new tab)" target="_blank">Data Science Community</a></li>
+          <li class="mb-2"><a data-l="GraphAcademy for Data Science" class="leading-6" href="https://graphacademy.neo4j.com/categories/data-scientist/" aria-label="GraphAcademy for Data Science (opens in new tab)" target="_blank">GraphAcademy for Data Science</a></li>
+        </ul>
+      </div>
+
+      <div class="cell small-12 medium-3 flex flex-col gap-y-3">
+        
+        <!-- Learn column -->
+        <div class="uppercase font-bold">Learn</div>
+        <ul class="list-none m-0 mb-4">
+          <li class="mb-2"><a data-l="resources" class="leading-6" href="/resources/">Resource Library</a></li>
+          <li class="mb-2"><a data-l="blog" class="leading-6" href="/blog/">Neo4j Blog</a></li>
+          <li class="mb-2"><a data-l="GraphAcademy" class="leading-6" href="https://graphacademy.neo4j.com/" aria-label="Graph Academy (opens in new tab)" target="_blank">GraphAcademy</a></li>
+          <li class="mb-2"><a data-l="Case Studies" class="leading-6" href="/case-studies/">Case Studies</a></li>
+          <li class="mb-2"><a data-l="Executive Insights" class="leading-6" href="/graph-database-executive-insights/">Executive Insights</a></li>
+          <li class="mb-2"><a data-l="Events Calendar" class="leading-6" href="/events/">Events Calendar</a></li>
+          <li class="mb-2"><a data-l="Graph Summit" class="leading-6" href="/graphsummit/">Graph Summit</a></li>
+          <li class="mb-2"><a data-l="Connections" class="leading-6" href="/connections/">Connections</a></li>
+          <li class="mb-2"><a data-l="Live Demos" class="leading-6" href="/live-demos/">Live Demos</a></li>
+          <li class="mb-2"><a data-l="Webinars" class="leading-6" href="/webinars/">Webinars</a></li>
+        </ul>
+        <!-- Partners -->
+        <div class="uppercase font-bold">Partners</div>
+        <ul class="list-none m-0 mb-4">
+          <li class="mb-2"><a data-l="Find a Partner" class="leading-6" href="/partners/directory/">Find a Partner</a></li>
+          <li class="mb-2"><a data-l="Become a Partner" class="leading-6" href="/partners/neo4j-partner-program/">Become a Partner</a></li>
+          <li class="mb-2"><a data-l="Solution Partners" class="leading-6" href="/partners/solution-partners/">Solution Partners</a></li>
+          <li class="mb-2"><a data-l="OEM Partners" class="leading-6" href="/partners/oem-partners/">OEM Partners</a></li>
+          <li class="mb-2"><a data-l="Technology Partners" class="leading-6" href="/partners/technology-partners/">Technology Partners</a></li>
+          <li class="mb-2"><a data-l="Partner Portal Login" class="leading-6" href="https://neo4j.my.site.com/Neo4jPartnerCommunity" aria-label="Partner Portal Login (opens in new tab)" target="_blank">Partner Portal Login</a></li>
+        </ul>
+      </div>
+
+      <!-- About column -->
+      <div class="cell small-12 medium-3 flex flex-col gap-y-3">
+        <!-- company -->
+        <div class="uppercase font-bold">Company</div>
+        <ul class="list-none m-0 mb-4">
+          <li class="mb-2"><a data-l="company" class="leading-6" href="/company/">About Us</a></li>
+          <li class="mb-2"><a data-l="newsroom" class="leading-6" href="/news/">Newsroom</a></li>
+          <li class="mb-2"><a data-l="awards and honors" class="leading-6" href="/awards/">Awards and Honors</a></li>
+          <li class="mb-2"><a data-l="Graphs4Good" class="leading-6" href="/graphs4good/">Graphs4Good</a></li>
+          <li class="mb-2"><a data-l="careers" class="leading-6" href="/careers/">Careers</a></li>
+          <li class="mb-2"><a data-l="culture" class="leading-6" href="/culture/">Culture</a></li>
+          <li class="mb-2"><a data-l="diversity" class="leading-6" href="/diversity-and-inclusion/">Diversity</a></li>
+          <li class="mb-2"><a data-l="staff" class="leading-6" href="/leadership/">Leadership</a></li>
+          <li class="mb-2"><a data-l="support" class="leading-6" href="https://support.neo4j.com" aria-label="Support (opens in new tab)" target="_blank">Support</a></li>
+        </ul>
+        <div class="uppercase font-bold"><a class="font-bold" data-l="contact us" href="/contact-us/?ref=footer">Contact Us →</a></div>
+        <div>
+          <ul class="list-none m-0 mb-4">
+            <li class="leading-6 mb-2">US: <a data-l="US phone" href="tel:1-855-636-4532">1-855-636-4532</a></li>
+            <li class="leading-6 mb-2">Sweden: <a data-l="Sweden phone" href="tel:+46 171 480 113">+46 171 480 113</a></li>
+            <li class="leading-6 mb-2">UK: <a data-l="UK phone" href="tel:+44 20 3868 3223">+44 20 3868 3223</a></li>
+            <li class="leading-6 mb-2">France: <a data-l="France phone" href="tel:+33 (0) 1 88 46 13 20">+33 (0) 1 88 46 13 20</a></li>
+        </div>
+        <div id="social-icons">
+          <div class="uppercase font-bold mb-4">Social Networks</div>
+          <a data-l="linkedin icon" href="https://www.linkedin.com/company/neo4j" aria-label="Neo4j on LinkedIn (opens in new tab)"
+            target="_blank" rel="noopener">
+            <div class="bg-baltic-55 rounded-full p-2 mr-1 inline-flex justify-center">
+              <i style="height: 14px; width: 14px" class="n-icon n-icon-linkedin n-icon-white"></i>
+            </div>
+          </a>
+
+          <a data-l="twitter icon" href="https://twitter.com/neo4j" aria-label="Neo4j on Twitter (opens in new tab)" target="_blank"
+            rel="noopener">
+            <div class="bg-baltic-55 rounded-full p-2 mr-1 inline-flex justify-center">
+              <i style="height: 14px; width: 14px" class="n-icon n-icon-twitter n-icon-white"></i>
+            </div>
+          </a>
+
+          <a data-l="youtube icon" href="https://youtube.com/neo4j" aria-label="Neo4j on YouTube (opens in new tab)" target="_blank"
+            rel="noopener">
+            <div class="bg-baltic-55 rounded-full p-2 mr-1 inline-flex justify-center">
+              <i style="height: 14px; width: 14px" class="n-icon n-icon-youtube n-icon-white"></i>
+            </div>
+          </a>
+
+          <a data-l="facebook icon" href="https://www.facebook.com/neo4j.graph.database" aria-label="Neo4j on Facebook (opens in new tab)"
+            target="_blank" rel="noopener">
+            <div class="bg-baltic-55 rounded-full p-2 mr-1 inline-flex justify-center">
+              <i style="height: 14px; width: 14px" class="n-icon n-icon-facebook n-icon-white"></i>
+            </div>
+          </a>
+
+          <a data-l="community icon" href="https://community.neo4j.com" aria-label="Neo4j Community Forum (opens in new tab)" target="_blank"
+            rel="noopener">
+            <div class="bg-baltic-55 rounded-full p-2 inline-flex justify-center">
+              <i style="height: 14px; width: 14px" class="n-icon n-icon-conversation-text n-icon-white"></i>
+            </div>
+          </a>
+
+          <a data-l="github icon" href="https://github.com/neo4j" aria-label="Neo4j Github (opens in new tab)" target="_blank" rel="noopener">
+            <div class="bg-baltic-55 rounded-full p-2 inline-flex justify-center">
+              <i style="height: 14px; width: 14px" class="n-icon n-icon-github n-icon-white"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="grid-x grid-padding-y">
+      <div class="cell small-12 medium-3">
+        <div>&#169; <span id="footer-copyright-year">2023</span> Neo4j, Inc.
+        </div>
+        <div>
+          <a data-l="terms" href="/terms/">Terms</a> | <a data-l="privacy" href="/privacy-policy/">Privacy Policy</a> | <a
+            data-l="sitemap" href="/sitemap/">Sitemap</a>
+            <br>
+            <a data-l="corruption" href="https://assets.neo4j.com/Neo4j_Anti_Corruption_Policy_Final.pdf" target="_blank">Anti-Corruption Policy</a>
+        </div>
+      </div>
+      <div class="cell small-12 medium-9">
+        Neo4j®, Neo Technology®, Cypher®, Neo4j® Bloom™, Neo4j® AuraDS™ and Neo4j® AuraDB™ are registered trademarks
+        of Neo4j, Inc. All other marks are owned by their respective companies.
+      </div>
+    </div>
+  </div>
+  <div class="hidden show-for-large contact-us-btn-container" style="position: fixed; right: 1rem; bottom: 0rem;">
+    <a href="/contact-us/" style="color: white; text-decoration: none" class="contact-us-btn button"><img class="mr-1" style="filter: brightness(0) invert(1); vertical-align: bottom; padding-bottom: 1px; margin-left: -1px;" src="https://dist.neo4j.com/wp-content/uploads/20210608133508/icon-tooltip-info.svg" alt=""> Contact Us</a>
+  </div>
+</div>
+</div>
+</footer>
+
+
+<a class="exit-off-canvas"></a>
+</div>
+</div>
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script type="text/javascript" src="https://neo4j.com/wp-content/themes/neo4jweb/assets/js/dist/dist.min.js?ver=202308119-1455" id="neo_app-js"></script>
+<script type="text/plain" src="https://neo4j.com/wp-content/themes/neo4jweb/assets/js/dist/components/neo_cookies.min.js?ver=20230228-2141" data-cookieconsent="marketing"></script>
+<script type="text/javascript" src="https://neo4j.com/wp-content/themes/neo4jweb/assets/js/dist/components/blog-single.min.js?ver=1.1" id="single-sidebar-js"></script>
+<script type="text/javascript" src="https://neo4j.com/wp-content/themes/neo4jweb/assets/neo4j-react-modules-assets/search-preact/bundle.13161.js?ver=6.4.1" id="/var/www/wp-content/themes/neo4jweb/assets/neo4j-react-modules-assets/search-preact/bundle.13161.js-js"></script>
+<script type="text/javascript" src="https://neo4j.com/wp-content/themes/neo4jweb/assets/neo4j-react-modules-assets/search-preact/polyfills.03bf6.js?ver=6.4.1" id="/var/www/wp-content/themes/neo4jweb/assets/neo4j-react-modules-assets/search-preact/polyfills.03bf6.js-js"></script>
+
+<!-- end of if is_singular etc -->
+
+</body>
+
+</html>
+<!-- Dynamic page generated in 0.277 seconds. -->
